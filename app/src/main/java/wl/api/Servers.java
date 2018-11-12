@@ -13,10 +13,6 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-import km.app.App;
-import km.model.M;
-import km.ui.ActLogin;
-import km.util.LoginUtil;
 import okhttp3.*;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okio.Buffer;
@@ -29,6 +25,9 @@ import rx.Observable.Transformer;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
+import wl.app.App;
+import wl.model.M;
+import wl.util.LoginUtil;
 
 /** Created by wuzhengu on 2018/10/30 0019 */
 public class Servers
@@ -122,7 +121,7 @@ public class Servers
 							if("token过期".equals(((M)out).msg)){
 								LoginUtil.logout();
 								Context ctxt=App.get();
-								if(ctxt!=null) ActLogin.start(ctxt);
+								//if(ctxt!=null) ActLogin.start(ctxt);
 							}
 						}
 						return out;
