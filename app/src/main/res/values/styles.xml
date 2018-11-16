@@ -4,4 +4,10 @@
 		parent="Theme.AppCompat.Light.DarkActionBar">
 		<item name="windowNoTitle">true</item>
 	</style>
+	
+	<style name="project_lineView">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/x1</item>
+		<item name="android:background">@color/grayColor_lineView</item>
+	</style>
 </resources>

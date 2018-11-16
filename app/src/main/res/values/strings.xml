@@ -1,3 +1,406 @@
 <resources>
+	<!-- 登录注册-->
 	<string name="app_name">thinkine</string>
+	<string name="sans_serif" translatable="false">sans-serif</string>
+	<string name="login_title">释放创造力</string>
+	<string name="login_account">请输入手机号码</string>
+	<string name="login_change_account">请输入更改手机号码</string>
+	<string name="login_pwd">请输入旧密码</string>
+	<string name="login_npwd">请输入密码</string>
+	<string name="login">登录</string>
+	<string name="register_account">注册账号</string>
+	<string name="forget_pwd">忘记密码</string>
+	<string name="rg_et_yz">请输入验证码</string>
+	<string name="rg_yz">获取验证码</string>
+	<string name="rg_xy">我已同意 创想引擎用户协议</string>
+	<string name="register">注册</string>
+	<string name="ok">确认</string>
+	<string name="bind">绑定</string>
+	<string name="select_person">选择个人，你可以继续完善信息或等待企业邀请</string>
+	<string name="select_qy">选择企业代表人，你可以新建公司并邀请成员加入企业</string>
+	<string name="select_name">请输入姓名</string>
+	<string name="select_et_qy">请输入企业名称</string>
+	<string name="select_et_person">请输入个人名称</string>
+	<string name="select_next">下一步</string>
+	<string name="rg_success">&#160;&#160;你已经完成注册\n正在等待加入企业</string>
+	<string name="rg_success_yq">邀请成员加入企业</string>
+	<string name="rg_success_wx">&#160;&#160;&#160;通过右上角按钮分享到微信邀请成员</string>
+	<string name="btn_rg_success">完成注册</string>
+	<string name="third_gl">—— &#160;&#160;&#160;请关联你的账号&#160;&#160;&#160;—— </string>
+	<string name="third_create">创建并绑定</string>
+	<string name="third_xy">我已经同意《用户协议》</string>
+	<string name="qy_id">请输入企业id(选填)</string>
+	<string name="tv_sm_code">扫一扫二维码</string>
+	<string name="tv_sq_code">受邀进入二维码</string>
+	
+	
+	<!--个人中心-->
+	<string name="person_head">头像</string>
+	<string name="person_name">个人姓名</string>
+	<string name="person_graduateinstitutions">毕业院校</string>
+	<string name="person_gd_time">毕业时间</string>
+	<string name="person_education">最高学历</string>
+	<string name="person_specialty">学科专业</string>
+	<string name="person_set">个人设置</string>
+	<string name="person_preference">偏好设置</string>
+	<string name="person_safe">账号安全</string>
+	<string name="person_clean_cache">清除缓存</string>
+	<string name="person_upload_progress">上传进度</string>
+	<string name="person_exit">退出当前账号</string>
+	
+	<string-array name="person_list">
+		<item>博士</item>
+		<item>硕士</item>
+		<item>本科</item>
+		<item>专科</item>
+		<item>高中</item>
+		<item>初中</item>
+		<item>小学</item>
+		<item>其他</item>
+	</string-array>
+	
+	<string-array name="color_list">
+		<item>#eec300</item>
+		<item>#fd9a00</item>
+		<item>#7a6ff0</item>
+		<item>#e362e3</item>
+	</string-array>
+	
+	<!--偏好设置-->
+	<string name="set_phone_notification">本机通知</string>
+	<string name="set_open">已开启</string>
+	<string name="set_content">如果你要关闭或开启thinkine的新消息通知,请在安卓的&#160;&#160;\"设置\"
+    --&#160;\"通知\" &#160;功能中，找到相应程序&#160;"thinkine"&#160;进行更改.</string>
+	<string name="set_get_message">接收新消息通知</string>
+	<string name="set_new_content">启用接收新消息通知后，手机消息通知将恢复正常</string>
+	
+	<!--账号与安全-->
+	<string name="account_login">当前登录账号</string>
+	<string name="update_pwd">修改密码</string>
+	<string name="phone_binding">已绑定手机号码</string>
+	<string name="change_phone">更换号码</string>
+	<string name="bind_wx">绑定微信</string>
+	<string name="bind_colse">解除绑定</string>
+	
+	<string name="login_phone2">登录账号</string>
+	<string name="now_pwd">当前密码</string>
+	<string name="new_pwd">新密码</string>
+	<string name="new_pwd_ok">确认新密码</string>
+	<string name="now_pwd_et">请输入当前密码</string>
+	<string name="new_pwd_et">请输入新密码</string>
+	<string name="new_pwd_etok">请输入确认新密码</string>
+	
+	<!-- 首页-->
+	<string name="main_qy">企业</string>
+	<string name="main_qy_explain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;马上升级到企业版\n开始管理项目</string>
+	<string name="main_upgrade_user">升级账号</string>
+	<string name="main_qy_id">输入企业ID\n&#160;&#160;&#160;&#160;加入公司项目</string>
+	<string name="main_pseron">个人</string>
+	<string name="main_bj_info">编辑信息</string>
+	
+	
+	<string name="test">test</string>
+	<string name="start">继续</string>
+	<string name="pause">暂停</string>
+	<string name="new_task">新建1</string>
+	<string name="new_task2">新建2</string>
+	<string name="query">查询数据库</string>
+	<string name="cancel">取消</string>
+	<string name="open">打开</string>
+	
+	<string name="errcode_success">分享成功</string>
+	<string name="errcode_cancel">取消分享</string>
+	<string name="errcode_deny">分享失败</string>
+	<string name="errcode_unknown">未知错误</string>
+	
+	<!-- 项目主页-->
+	<item name="type_header" type="integer"/>
+	<item name="type_footer" type="integer"/>
+	<item name="type_child" type="integer"/>
+	
+	
+	<string name="main_tab_session">会话</string>
+	<string name="main_tab_contact">通讯录</string>
+	<string name="user_profile">个人名片</string>
+	<string name="registering">注册中\u2026</string>
+	<string name="agree">同意</string>
+	<string name="reject">拒绝</string>
+	<string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+	<string name="login_hint_account">请输入帐号</string>
+	<string name="login_hint_password">请输入密码</string>
+	<string name="input_account">请输入帐号，限20位字母或者数字</string>
+	<string name="register_account_tip">帐号限20位字母或者数字</string>
+	<string name="input_nickname">请输入昵称，限10位汉字、字母或者数字</string>
+	<string name="register_nick_name_tip">昵称限10位汉字、字母或者数字</string>
+	<string name="input_password">请输入密码，6~20位字母或者数字</string>
+	<string name="register_password_tip">密码必须为6~20位字母或者数字</string>
+	<string name="register_success">注册成功</string>
+	<string name="register_failed">注册失败,错误码%1$s:%2$s</string>
+	<string name="login_has_account">已有帐号？直接登录</string>
+	<string name="done">完成</string>
+	<string name="prepare_data">正在准备数据...</string>
+	
+	<string name="readed">已读</string>
+	<string name="unread">未读</string>
+	<string name="about">关于</string>
+	<string name="logout">注销</string>
+	<string name="add">添加</string>
+	<string name="remove">移除</string>
+	<string name="menu">菜单</string>
+	<string name="verify_reminder">验证提醒</string>
+	<string name="without_content">暂无</string>
+	<string name="create">新建</string>
+	<string name="delete_tip">删除提示</string>
+	<string name="delete_system_message">删除该条系统消息？</string>
+	<string name="delete_success">删除成功</string>
+	<string name="clear_all_success">清空成功</string>
+	<string name="login_failed">帐号或密码错误</string>
+	<string name="login_exception">无效输入</string>
+	<string name="file_browser">文件浏览器</string>
+	<string name="upload_text">上传</string>
+	<string name="download_text">下载</string>
+	<string name="now_allow_space">不能含有空格</string>
+	<string name="open_im">开启</string>
+	<string name="close">关闭</string>
+	<string name="search_advanced_team">搜索高级群</string>
+	<string name="net_broken">当前网络不可用</string>
+	<string name="nim_status_unlogin">未登录</string>
+	<string name="nim_status_connecting">连接中...</string>
+	<string name="nim_status_logining">登录中...</string>
+	<string name="copyright">Copyright ©1997-2018 网易公司版权所有</string>
+	<string name="user_not_exsit">该用户不存在</string>
+	<string name="user_tips">请检查你输入的帐号是否正确</string>
+	<string name="edit">编辑</string>
+	
+	<!-- session -->
+	<string name="input_panel_guess">猜 拳</string>
+	<string name="input_panel_audio_call">语音通话</string>
+	<string name="input_panel_video_call">视频通话</string>
+	<string name="input_panel_file">发送文件</string>
+	<string name="input_panel_RTS">白 板</string>
+	<string name="input_panel_snapchat">阅后即焚</string>
+	<string name="input_panel_tip">Tip</string>
+	<string name="input_panel_ack_msg">已读回执</string>
+	<string name="message_history_query">云消息记录</string>
+	<string name="message_search_title">搜索本地消息记录</string>
+	<string name="message_clear">清空本地消息记录</string>
+	<string name="message_info">聊天信息</string>
+	
+	<!-- 通讯录 -->
+	<string name="add_friend">加为好友</string>
+	<string name="remove_friend">删除好友</string>
+	<string name="begin_chat">聊天</string>
+	<string name="remove_friend_tip">删除好友后，将同时解除双方的好友关系</string>
+	<string name="remove_friend_success">删除好友成功</string>
+	<string name="add_friend_self_tip">不能添加自己为好友</string>
+	<string name="add_friend_verify_tip">好友验证请求</string>
+	<string name="black_list_tip">你不会接收到列表中联系人的任何消息</string>
+	
+	<!-- 群 -->
+	<string name="add_buddy">添加好友</string>
+	<string name="create_normal_team">创建讨论组</string>
+	<string name="team_apply_sending">发送中…</string>
+	<string name="no_team">您还没有群</string>
+	<string name="no_normal_team">您还没有讨论组</string>
+	<string name="team_search_hint">请输入群号进行搜索</string>
+	<string name="team_number_not_exist">群号不存在</string>
+	<string name="team_join">加入群组</string>
+	<string name="team_join_success">成功加入群: %1$s</string>
+	<string name="team_apply_to_join_send_success">申请已发出</string>
+	<string name="has_exist_in_team">已经在群里</string>
+	<string name="team_num_limit">群数量已达上限</string>
+	
+	<!-- 消息提醒 -->
+	
+	<!-- 自定义通知 -->
+	<string name="custom_notification">自定义通知</string>
+	<string name="select_custom_notification_target">选择发送对象</string>
+	<string name="send_custom_notification_tip">请输入要发送的内容</string>
+	<string name="send_custom_notification_success">自定义通知发送成功</string>
+	<string name="send_custom_notification_failed">自定义通知发送失败</string>
+	<string name="send_custom_notification_to_buddy">发送给好友</string>
+	<string name="send_custom_notification_to_team">发送给群组</string>
+	
+	<!-- 消息类型 -->
+	<string name="msg_type_image">图片</string>
+	<string name="msg_type_audio">语音</string>
+	
+	<!-- location -->
+	<string name="location_navigate">导航</string>
+	<string name="location_loading">正在定位</string>
+	<string name="location_map">地图定位</string>
+	<string name="my_location">我的位置</string>
+	<string name="location_address_unkown">该位置信息暂无</string>
+	<string name="format_mylocation">我的位置：%s</string>
+	<string name="location_address_fail">获取位置信息失败</string>
+	<string name="tools_selected">选择工具</string>
+	<string name="friends_map_navigation_web">在网页中打开</string>
+	<string name="location_open_map_error">打开地图出错</string>
+	
+	<!-- about -->
+	<string name="about_clear_msg_history">清空所有聊天记录</string>
+	<string name="clear_msg_history_success">聊天记录已清空</string>
+	
+	<!-- 云信SDK所需文案 -->
+	<string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+	<string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+	<string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+	<string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+	<string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+	<string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+	<string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+	<string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+	<string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+	<string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+	<string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+	
+	<!-- setting -->
+	<string name="settings">设置</string>
+	<string name="no_disturb">免打扰</string>
+	<string name="multiport_push">PC/Web在线推送</string>
+	<string name="msg_notice">消息提醒</string>
+	<string name="setting_about">关于</string>
+	<string name="setting_close">已关闭</string>
+	<string name="no_disturb_tips">在设定的时间段内云信消息将不再提醒</string>
+	<string name="time_from">从</string>
+	<string name="time_to">至</string>
+	<string name="time_from_default">22:00</string>
+	<string name="time_to_default">08:00</string>
+	<string name="black_list">黑名单</string>
+	<string name="msg_speaker">听筒模式</string>
+	<string name="ring">响铃模式</string>
+	<string name="led">自定义呼吸灯</string>
+	<string name="notice_content">通知栏标题定制</string>
+	<string name="clear_index">清理全文检索缓存</string>
+	<string name="clear_sdk_cache">清理SDK文件缓存</string>
+	<string name="push_no_detail">推送不展示消息详情</string>
+	<string name="operation_too_frequent">操作太频繁</string>
+	<!-- 多端登录 -->
+	<string name="multiport_manager">多端登录管理</string>
+	<string name="multiport_logout">下线</string>
+	<string name="computer_version">云信电脑版</string>
+	<string name="web_version">云信网页版</string>
+	<string name="mobile_version">云信移动版</string>
+	<string name="multiport_logging">正在使用</string>
+	<string name="kickout_notify">下线通知</string>
+	<string name="kickout_content">你的帐号被%1$s踢出下线，请确定帐号信息安全</string>
+	
+	<!-- 多端在线类型 -->
+	<string name="on_line">在线</string>
+	<string name="on_line_pc">PC在线</string>
+	<string name="on_line_mac">Mac在线</string>
+	<string name="on_line_web">web在线</string>
+	<string name="client_aos">Android</string>
+	<string name="client_ios">iOS</string>
+	<string name="on_line_busy">忙碌</string>
+	<string name="off_line">离线</string>
+	
+	<!-- 阅后即焚 -->
+	<string name="snapchat_longclick_to_view">按住查看</string>
+	
+	<!-- 个人名片 -->
+	<string name="birthday">生 日</string>
+	<string name="phone">手 机</string>
+	<string name="email">邮 箱</string>
+	<string name="signature">签 名</string>
+	<string name="head">头 像</string>
+	<string name="user_information">个人信息</string>
+	<string name="nickname">昵 称</string>
+	<string name="alias">备注名</string>
+	<string name="gender">性 别</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="other">其他</string>
+	<string name="phone_number">手机号码</string>
+	<string name="set_head_image">设置头像</string>
+	<string name="user_info_update_success">设置成功</string>
+	<string name="user_info_update_cancel">取消更新</string>
+	<string name="user_info_update_failed">设置失败，请重试</string>
+	<string name="head_update_success">头像设置成功</string>
+	<string name="head_update_failed">头像设置失败，请重试</string>
+	<string name="nickname_empty">昵称不能为空</string>
+	
+	<!-- JsBridge -->
+	<string name="js_bridge">NIM JS Bridge</string>
+	<string name="js_bridge_demonstration">Js Bridge演示</string>
+	
+	<!--机器人-->
+	<string name="nim_robot_title">云小信机器人</string>
+	<string name="robot_start_chat">开始对话</string>
+	
+	<!-- 已读回执 -->
+	<string name="send_ack_msg">发送已读回执消息</string>
+	<string name="ack_msg_info">消息已读详情</string>
+	<string name="ack_msg_tip">已读回执能力支持文本、图片、音频、视频、文件、自定义等消息类型。此处仅以文本消息作为演示，开发者可以根据具体业务场景进行功能设计。</string>
+	
+	<!--审批部分-->
+	<string-array name="leave_type">
+		<item>年假</item>
+		<item>事假</item>
+		<item>病假</item>
+		<item>调休假</item>
+		<item>婚假</item>
+		<item>产假</item>
+		<item>陪产假</item>
+		<item>其他</item>
+	</string-array>
+	
+	<string-array name="cost_type">
+		<item>差旅费</item>
+		<item>办公费</item>
+		<item>招待费</item>
+		<item>市内交通费</item>
+		<item>通讯费</item>
+		<item>采购付款</item>
+		<item>其他</item>
+	</string-array>
+	<!--报销类型-->
+	<string-array name="payment_type">
+		<item>差旅费</item>
+		<item>交通费</item>
+		<item>招待费</item>
+		<item>其他</item>
+	</string-array>
+	
+	<!--报销 费用类型-->
+	<string-array name="payment_cost_type">
+		<item>飞机票</item>
+		<item>火车票</item>
+		<item>的士费</item>
+		<item>住宿费</item>
+		<item>餐饮费</item>
+		<item>礼品费</item>
+		<item>活动费</item>
+		<item>通讯费</item>
+		<item>补助费</item>
+		<item>其他费</item>
+	</string-array>
+	
+	<!--用章类型-->
+	<string-array name="chapter_type">
+		<item>公章</item>
+		<item>合同章</item>
+		<item>法人章</item>
+		<item>其他</item>
+	</string-array>
+	
+	<!--车辆类型-->
+	<string-array name="car_type">
+		<item>车型1</item>
+		<item>车型2</item>
+		<item>车型3</item>
+		<item>其他</item>
+	</string-array>
+	
+	<!--付款方式-->
+	<string-array name="paymoney_type">
+		<item>银行卡</item>
+		<item>现金</item>
+		<item>汇票</item>
+		<item>电汇</item>
+		<item>贷记</item>
+		<item>支票</item>
+		<item>其他</item>
+	</string-array>
+
 </resources>

@@ -1,5 +1,6 @@
 package wl.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,8 +16,9 @@ import butterknife.Unbinder;
 import wl.api.RxActivity;
 import wl.app.App;
 
-/** Created by wuzhengu on 2018/10/29 0029 */
-public class BaseActivity extends RxActivity
+/**
+ Created by wuzhengu on 2018/10/29 0029 */
+public abstract class BaseActivity extends RxActivity
 {
 	ActivityProxy mProxy;
 	Unbinder mUnbinder;
@@ -41,15 +43,21 @@ public class BaseActivity extends RxActivity
 	protected void onCreate(@Nullable Bundle bundle){
 		App.set(this, true);
 		super.onCreate(bundle);
-		int layout=getLayoutId();
-		if(layout!=0) setContentView(layout);
+		int layout=getLayout();
+		if(!(layout==-1 || layout==0)) setContentView(getLayout());
+			//setContentView(layout);
+		initData();
 	}
+	
+	public abstract int getLayout();
+	//public abstract int initView();
+	public abstract void initData();
 	
 	protected int getLayoutId(){
 		return 0;
 	}
 	
-	public View getView() {
+	public View getView(){
 		return findViewById(Window.ID_ANDROID_CONTENT);
 	}
 	
@@ -92,5 +100,83 @@ public class BaseActivity extends RxActivity
 	
 	public static void toast(Context ctxt, CharSequence text){
 		Toast.makeText(ctxt, text, Toast.LENGTH_SHORT).show();
+	}
+	
+	/**
+	 跳转后，当前界面自销毁
+	 */
+	public void skipActivity(Activity aty, Class<?> cls){
+		showActivity(aty, cls);
+		aty.finish();
+	}
+	
+	/**
+	 跳转后，当前界面自销毁
+	 */
+	public void skipActivity(Activity aty, Intent it){
+		showActivity(aty, it);
+		aty.finish();
+	}
+	
+	/**
+	 跳转后，当前界面自销毁
+	 */
+	public void skipActivity(Activity aty, Class<?> cls, Bundle extras){
+		showActivity(aty, cls, extras);
+		aty.finish();
+	}
+	
+	/**
+	 Activity跳转
+	 */
+	public void showActivity(Activity aty, Class<?> cls){
+		Intent intent=new Intent();
+		intent.setClass(aty, cls);
+		aty.startActivity(intent);
+	}
+	//	/**
+	//	 * Activity跳转 开启底部动画
+	//	 */
+	//	public void showActivityOpenTranslate(Activity aty, Class<?> cls) {
+	//		Intent intent = new Intent();
+	//		intent.setClass(aty, cls);
+	//		aty.startActivity(intent);
+	//		aty.overridePendingTransition(R.anim.activity_open, R.anim.activity_stay);
+	//	}
+	
+	/**
+	 Activity跳转 开启关闭动画
+	 */
+	public void showActivityColseTranslate(Activity aty, Class<?> cls){
+		Intent intent=new Intent();
+		intent.setClass(aty, cls);
+		aty.startActivity(intent);
+	}
+	
+	/**
+	 new_task来处理页面关闭的问题singtask
+	 */
+	public void showNewTaskActivity(Activity aty, Class<?> cls){
+		Intent intent=new Intent();
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+		intent.setClass(aty, cls);
+		aty.startActivity(intent);
+	}
+	
+	/**
+	 Activity跳转
+	 */
+	public void showActivity(Activity aty, Intent it){
+		aty.startActivity(it);
+	}
+	
+	/**
+	 Activity跳转
+	 */
+	public void showActivity(Activity aty, Class<?> cls, Bundle extras){
+		Intent intent=new Intent();
+		intent.putExtras(extras);
+		intent.setClass(aty, cls);
+		aty.startActivity(intent);
 	}
 }

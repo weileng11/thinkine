@@ -1,7 +1,5 @@
 package wl.base;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 import wl.thinkine.R;
@@ -14,9 +12,19 @@ public class BaseTitleActivity extends BaseActivity
 	TextView tvTitle;
 	TextView tvRight;
 	
+	//@Override
+	//protected void onCreate(@Nullable Bundle bundle){
+	//	super.onCreate(bundle);
+	//	initToolbar();
+	//}
+	
 	@Override
-	protected void onCreate(@Nullable Bundle bundle){
-		super.onCreate(bundle);
+	public int getLayout(){
+		return 0;
+	}
+	
+	@Override
+	public void initData(){
 		initToolbar();
 	}
 	

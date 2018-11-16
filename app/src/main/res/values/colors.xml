@@ -1,26 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="price_now">#e10130</color>
-	<color name="price_old">#777</color>
+	<color name="colorCirclebg">#100000ff</color>
+	<color name="colorStart">#1212F6</color>
+	<color name="colorEnd">#F212C6</color>
+	<color name="colorPrimary1">#e362e3</color>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
 	
-	<color name="white">#ffffffff</color>
-	<color name="black">#ff000000</color>
-	<color name="red">#ffff0000</color>
-	<color name="blue">#ff0000ff</color>
-	<color name="gray">#666667</color>
+	<!-- 改版首页颜色-->
+	<color name="grayColor_main_parent">#00064b</color>
+	<color name="grayColor_main_time">#898989</color>
+	<color name="grayColor_main_sy_time">#1d1d26</color>
+	<!-- 进行中-->
+	<color name="grayColor_main_parent_circle_jd">#0576e6</color>
+	<color name="grayColor_main_childrenjx_jd_one">#4ab0fe</color>
+	<color name="grayColor_main_childrenjx_jd_two">#0fe5fe</color>
+	<color name="grayColor_main_parent_circle_bg">#f0f0f0</color>
 	
-	<color name="grayColor_line">#eeeeee</color>
+	<!--异常-->
+	<color name="grayColor_main_parent_circleyc_jd">#ff9306</color>
+	<color name="grayColor_main_childrenyc_jd_one">#ff9b0c</color>
+	<color name="grayColor_main_childrenyc_jd_two">#feda3b</color>
+	
+	<!--暂停-->
+	<color name="grayColor_main_children_pause">#9f9f9f</color>
+	<color name="grayColor_main_childrensy_pause">#8f8f8f</color>
+	
+	<color name="grayColor_main_children_txv">#004074</color>
+	
+	<!-- 改版首页颜色-->
+	
+	<color name="main_bg">#314661</color>
+	<color name="chat_send">#828282</color>
+	
+	<!-- NSString const * grayColor_alto = @"#DBDBDB";
+	 NSString const * grayColor_veryLight = @"#CDCDCD";
+	 NSString const * grayColor_concrete = @"#F2F2F2";
+
+	 NSString const * blueColor_darkTurquoise = @"#00D7E0";
+	 NSString const * blueColor_deepSkyBlue = @"#00C6FA";
+
+	 NSString const * greenColor_mediumTurquoise = @"#52D9C6";
+	 NSString const * orangeColor_superNova = @"#FFBA33";
+
+	 NSString const * blueColor_venice = @"#06598A";
+	 NSString const * grayColor_pumice = @"#C4C5C6";
+
+	 [self.leftProjectCircleProgressView setupForegroundLeftColors:@[(id)[UIColor colorWithHexadecimal:@"#00E46D"].CGColor,
+	  (id)[UIColor colorWithHexadecimal:@"#0EC147"].CGColor] foregroundRightColors:@[(id)[UIColor colorWithHexadecimal:@"#00E46D"].CGColor,
+	   (id)[UIColor colorWithHexadecimal:@"#0EC147"].CGColor]];
+
+	 -->
+	<color name="grayColor_comm_bg">#f2f6f9</color>
+	<color name="grayColor_yh_start">#00E46D</color>
+	<color name="grayColor_yh_end">#0EC147</color>
+	
+	
+	<!--  全局颜色 NSString const * grayColor_main = @"#262626";
+	NSString const * grayColor_main1 = @"#808080";
+	NSString const * grayColor_hint = @"#A6A6A6";
+	NSString const * grayColor_lineView = @"#E8E9E9"; -->
+	
+	<color name="grayColor_alto">#DBDBDB</color>
+	<color name="grayColor_veryLight">#CDCDCD</color>
+	<color name="grayColor_concrete">#F2F2F2</color>
+	<color name="blueColor_darkTurquoise">#00D7E0</color>
+	<color name="blueColor_deepSkyBlue">#00C6FA</color>
+	
+	<color name="greenColor_mediumTurquoise">#52D9C6</color><!-- //项目颜色-->
+	<color name="orangeColor_superNova">#FFBA33</color>
+	
+	<color name="blueColor_venice">#06598A</color>
+	<color name="grayColor_pumice">#C4C5C6</color>
+	
+	<color name="grayColor_lineView">#E8E9E9</color>
+	<color name="all_project_txv">#c5c5c5</color>
 	<color name="grayColor_hint">#A6A6A6</color>
 	<color name="grayColor_main">#262626</color>
 	<color name="grayColor_main1">#808080</color>
 	
-	<color name="colorYellow">#FFFF00</color>
-	<color name="colorWhite">#FFFFFF</color>
-	<color name="color_cs">#ef7113</color>
-	<color name="color_grayness">#494949</color>
-	<color name="color_gray_se">#cec0a0</color>
-	<color name="color_bus_hui">#786b48</color>
-	<color name="color_info_tv">#262626</color>
-	<color name="color_pub_tv">#666666</color>
-	<color name="color_pub_tv1">#999999</color>
+	
+	<color name="task_txv">#197eff</color>
+	<color name="task_hint_txv1">#989898</color>
+	
+	
+	<color name="color_comm_zm">#f2f2f2</color>
+	
+	<!--时间选择器-->
+	<color name="transparent">#00000000</color>
+	<color name="calendar_text_color_disable">#cccccc</color>
+	<color name="calendar_date_bg">#FCB058</color>
+	<color name="bg_white">#ffffff</color>
+	<color name="fsgm_blue">#49ADE9</color>
+	<color name="text_color_normal">#A0A0A0</color>
+	<color name="fsgm_colorWhite">#FFFFFFFF</color>
+	<color name="fsgm_弱字体">#4f4f4f</color>
+	<color name="fsgm_big_deivide">#f4f4f4</color>
+	<color name="normal_day">#424242</color>
+	<color name="selected_day_background">#03A9F4</color>
+	<color name="selected_day_text">#FFFFFF</color>
+	<color name="month_day_label_text">#757575</color>
+	<color name="weekends_day">#BDBDBD</color>
+	<color name="current_day_background">#DDDDDD</color>
+	<color name="normal_month">#03A9F4</color>
+	<color name="start_end_text_color">#FF0000</color>
+	<!--时间选择器 -->
+	
+	<color name="white">#FFFFFF</color><!--白色 -->
+	<color name="black">#000000</color><!--黑色 -->
+	<color name="gray">#808080</color><!--灰色 -->
+	<color name="bule">#303F9F</color>
+	<color name="select_dialog">#EBEBEB</color>
+	
+	<color name="color_black">#000000</color>
+	<color name="color_txv">#b0b0b0</color>
+	<color name="color_txv1">#38cedc</color>
+	<color name="color_txv2">#5a88e5</color>
+	<color name="color_bule">#3dc6ff</color>
+	<color name="color_thinbule">#28b0ce</color>
+	<color name="color_view">#e6e6e7</color>
+	<color name="color_ban_tm">#80000000</color>
+	
+	
+	<color name="main_color_txv">#1d1d26</color>
+	<color name="main_color_txv1">#060606</color>
+	<color name="main_color_txv2">#898e95</color>
+	<color name="main_color_view">#f2f2f2</color>
+	
+	<color name="paint_current">#29E516</color>
+	<color name="paint_out">#F6F82B</color>
+	
+	<color name="background_tab_pressed">#FFFFFF</color>
+	<color name="project_bg">#e8f1f7</color>
+	<color name="project_head_txv">#1d1d26</color>
+	<color name="project_cilce_view">#27d55b</color>
+	<color name="project_cilcelm_view">#e7e2e2</color>
+	<color name="project_view1">#18e368</color><!--进行中 -->
+	<color name="project_txv1">#696969</color>
+	<color name="project_txv2">#454545</color>
+	<color name="project_txv3">#5a7599</color>  <!--已完成 -->
+	<color name="project_txv4">#f98d29</color> <!--有异常 -->
+	<color name="view_clice">#c6d0de</color>
+	
+	<color name="project_clicen_bg">#f2f8ff</color>
+	<color name="project_clice_color_txv">#08c223</color>
+	<color name="project_clice_color1">#f0f2f2</color>
+	<color name="project_clice_color2">#f0f1f2</color>
+	<color name="view_ok">#1ab5fd</color>
+	
+	<color name="projectdl_txv">#197eff</color>
+	<color name="projectdl_txv1">#555459</color>
+	<color name="projectdl_bg">#dfe8ef</color>
+	<color name="projectdl_txv2">#1c1c23</color>
+	<color name="projectdl_txv3">#c5c5c5</color>
+	<color name="projectdl_children_bg">#f8f8f8</color>
+	
+	<color name="projectdl_ok_bg">#17d0ba</color>
+	<color name="projectdl_yc_bg">#dda600</color>
+	
+	<color name="communication_txv">#2388db</color>
+	<color name="communication_txv1">#000000</color>
+	
+	<color name="zjColor">#98FB98</color>
+	
+	<!--新建项目颜色-->
+	<color name="project_content_quote">#22a1e8</color>
+	<color name="project_content_tax">#a7d8f6</color>
+	<color name="project_content_tax_txv">#565656</color>
+	
+	<color name="project_quote_item_quan">#0a9bea</color>
+	<color name="project_quote_item_txv">#099cec</color>
+	<color name="project_quote_item_txv1">#616161</color>
+	
+	<!--一个人加入多加企业-->
+	<color name="create_ep">#00b8ee</color>
+	<color name="join_ep">#ff9666</color>
+	
+	<color name="color_blue_3a9efb">#3a9efb</color>
+	
+	<!-- im部分-->
+	<!-- 其它背景色或分割线相关 -->
+	<color name="bg_content">#f3f3f3</color>
+	<color name="divider_line">#d9d9d9</color>
+	
+	<!-- 字体色 -->
+	<color name="text_title">#1b1b1b</color>
+	<color name="text_content">#818181</color>
+	<color name="text_sub">#919191</color>
+	<color name="text_hint">#c7c7c7</color>
+	<color name="text_black">#404040</color>
+	
+	<color name="chat_send_bg">#E4F4FE</color>
+	<color name="chat_send_text">#000000</color>
+	
+	<color name="chat_accept_bg">#EBEFF0</color>
+	<color name="chat_accept_text">#000000</color>
 </resources>
