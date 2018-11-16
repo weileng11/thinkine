@@ -1,6 +1,6 @@
 <resources>
 	<!-- 登录注册-->
-	<string name="app_name">thinkine</string>
+	<string name="app_name_tt">thinkine</string>
 	<string name="sans_serif" translatable="false">sans-serif</string>
 	<string name="login_title">释放创造力</string>
 	<string name="login_account">请输入手机号码</string>
