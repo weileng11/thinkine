@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/thinkine.iml" filepath="$PROJECT_DIR$/thinkine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-utils/wl-utils.iml" filepath="$PROJECT_DIR$/wl-utils/wl-utils.iml" />
     </modules>
   </component>
 </project>
