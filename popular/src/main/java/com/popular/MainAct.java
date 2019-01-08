@@ -6,7 +6,7 @@ import com.popular.practice.PracticeAct;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MainActivity extends BaseActivity
+public class MainAct extends BaseActivity
 {
 	@BindView(R.id.btn_practice)
 	Button mBtnPractice;
