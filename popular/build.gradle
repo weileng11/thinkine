@@ -29,6 +29,11 @@ dependencies{
 	//noinspection GradleCompatible
 	implementation 'com.android.support:appcompat-v7:27.0.0'
 	
+	debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+	releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
+	// Optional, if you use support library fragments:
+	debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.2'
+	
 	//注释
 	implementation "com.jakewharton:butterknife:8.8.1"
 	annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
