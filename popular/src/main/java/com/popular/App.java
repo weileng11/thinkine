@@ -11,6 +11,7 @@ import com.scwang.smartrefresh.layout.api.*;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.squareup.leakcanary.LeakCanary;
+import com.tencent.mmkv.MMKV;
 import java.util.ArrayList;
 
 public class App extends Application
@@ -58,6 +59,8 @@ public class App extends Application
 			return;
 		}
 		LeakCanary.install(this);
+		
+		MMKV.initialize(this);
 	}
 	
 	//@Override

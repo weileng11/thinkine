@@ -14,9 +14,11 @@ import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.config.PictureMimeType;
 import com.luck.picture.lib.entity.LocalMedia;
+import com.orhanobut.dialogplus.*;
 import com.popular.R;
 import com.popular.comm.BaseActivity;
 import com.popular.comm.Global;
+import com.popular.comm.SaveUtil;
 import com.popular.practice.annotation.BindEventBus;
 import com.popular.practice.bean.EventBusTest;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
@@ -123,6 +125,7 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 			break;
 		//滑动
 		case R.id.btn_hd:
+			Global.showToast(SaveUtil.loadKey2());
 			break;
 		//zxing
 		case R.id.btn_zxing:
@@ -130,9 +133,12 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 			break;
 		//dialog
 		case R.id.btn_dialog:
+			showBaseDialog();
 			break;
 		//mmkv
 		case R.id.btn_mmkv:
+			SaveUtil.saveKey("2222","33333");
+			Global.showToast(SaveUtil.loadKey());
 			break;
 		}
 	}
@@ -294,4 +300,47 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 		Global.showToast("用户授权失败");
 	}
 	//==================权限================//
+	
+	//====dialog===//
+	private void showBaseDialog(){
+		//根据自己dialog中展示的内容自定义适配器
+		//DialogAdapter adapter = new DialogAdapter(this);
+		DialogPlus dialog = DialogPlus.newDialog(this)
+				.setGravity(Gravity.CENTER)// 可选TOP/BOTTOM
+				.setContentHolder(new ViewHolder(R.layout.content))
+				.setOnClickListener(new OnClickListener(){
+					@Override
+					public void onClick(DialogPlus dialog, View view){
+					     view.findViewById(R.id.tv1).setOnClickListener(new View.OnClickListener(){
+						     @Override
+						     public void onClick(View v){
+						     	Global.showToast("sasasasa");
+						     }
+					     });
+					}
+				})
+				//.setContentHolder(new ListHolder()) //或者 new GridHolder(3)，参数列数
+				//.setHeader(R.layout.header)//自定义头部
+				//.setFooter(R.layout.footer)//自定义尾部
+				//.setAdapter(adapter)//自定义
+				//.setContentWidth(ViewGroup.LayoutParams.WRAP_CONTENT)  // or any custom width ie: 300
+				//.setContentHeight(ViewGroup.LayoutParams.WRAP_CONTENT)
+				.setContentBackgroundResource(R.color.blue)//默认白色
+				.setInAnimation(R.anim.slide_in_top)//in动画
+				.setOutAnimation(R.anim.slide_out_bottom)//out动画
+				.setMargin(20,20,20,20)
+				.setPadding(20,20,20,20)
+				.setOutMostMargin(2,2,2,2)//半透明边框
+				.setExpanded(true)//默认false展开
+				.setOnItemClickListener(new OnItemClickListener() {
+					@Override
+					public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
+						dialog.dismiss();
+						Toast.makeText(PracticeAct.this, item.toString() + " | " + position, Toast.LENGTH_SHORT).show();
+					}
+				})
+				.setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
+				.create();
+		dialog.show();
+	}
 }
