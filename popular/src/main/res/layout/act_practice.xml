@@ -12,60 +12,70 @@
 		>
 		
 		<Button
+			android:id="@+id/btn_eventbus"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="eventbus"
 			/>
 		
 		<Button
+			android:id="@+id/btn_pop"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="pop"
 			/>
 		
 		<Button
+			android:id="@+id/btn_yuan"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="圆"
 			/>
 		
 		<Button
+			android:id="@+id/btn_select_tp"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="图片选择"
 			/>
 		
 		<Button
+			android:id="@+id/btn_lock"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="手势锁"
 			/>
 		
 		<Button
+			android:id="@+id/btn_quanxian"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="权限"
 			/>
 		
 		<Button
+			android:id="@+id/btn_hd"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="滑动"
 			/>
 		
 		<Button
+			android:id="@+id/btn_zxing"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="zxing"
 			/>
 		
 		<Button
+			android:id="@+id/btn_dialog"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="dialogplus 全局对话框"
 			/>
 		
 		<Button
+			android:id="@+id/btn_mmkv"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
 			android:text="mmkv替代sp"
