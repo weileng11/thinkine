@@ -28,6 +28,8 @@ dependencies{
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 	//noinspection GradleCompatible
 	implementation 'com.android.support:appcompat-v7:27.0.0'
+	//https://github.com/gyf-dev/ImmersionBar 状态栏
+	implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
 	
 	debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
 	releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
@@ -41,7 +43,7 @@ dependencies{
 	implementation "com.github.bumptech.glide:glide:3.7.0"
 	//eventbus
 	implementation "org.greenrobot:eventbus:3.1.1"
-	//pop
+	//pop https://github.com/weileng11/EasyPopup-master
 	implementation "com.github.zyyoona7:EasyPopup:1.1.2"
 	//圆
 	implementation "com.makeramen:roundedimageview:2.3.0"

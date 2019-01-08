@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	>
+	
+	<com.github.ihsg.patternlocker.PatternIndicatorView
+		android:id="@+id/pattern_indicator_view"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="center"
+		android:layout_margin="20dp"
+		/>
+	
+	<TextView
+		android:id="@+id/tv_hint"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="10dp"
+		android:text="绘制手势密码"
+		android:textColor="@color/black"
+		android:textSize="18sp"
+		/>
+	
+	<com.github.ihsg.patternlocker.PatternLockerView
+		android:id="@+id/pattern_lock_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginTop="20dp"
+		/>
+	
+	<TextView
+		android:id="@+id/tv_lost_gesture"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="32dp"
+		android:text="忘记手势密码?"
+		android:textSize="18sp"
+		/>
+</LinearLayout>

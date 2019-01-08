@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical"
+	>
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:src="@mipmap/ic_launcher"
+		app:riv_border_color="#333333"
+		app:riv_border_width="2dp"
+		android:scaleType="centerCrop"
+		app:riv_oval="true"
+		/>
+	
+	<com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="centerCrop"
+		android:src="@mipmap/ic_launcher"
+		app:riv_border_color="#333333"
+		app:riv_border_width="2dp"
+		app:riv_corner_radius="10dp"
+		app:riv_mutate_background="true"
+		app:riv_oval="false"
+		app:riv_tile_mode="repeat"
+		/>
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="center"
+		android:src="@mipmap/ic_launcher"
+		app:riv_border_color="#333333"
+		app:riv_border_width="2dp"
+		app:riv_corner_radius_bottom_right="25dp"
+		app:riv_corner_radius_top_left="25dp"
+		app:riv_mutate_background="true"
+		app:riv_oval="false"
+		app:riv_tile_mode="repeat"
+		/>
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter"
+		android:src="@mipmap/ic_launcher"
+		app:riv_border_color="#333333"
+		app:riv_border_width="2dp"
+		app:riv_corner_radius_bottom_left="25dp"
+		app:riv_corner_radius_top_right="25dp"
+		app:riv_mutate_background="true"
+		app:riv_oval="false"
+		app:riv_tile_mode="repeat"
+		/>
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:layout_width="96dp"
+		android:layout_height="72dp"
+		android:scaleType="center"
+		android:src="@mipmap/ic_launcher"
+		app:riv_border_color="#333333"
+		app:riv_border_width="2dp"
+		app:riv_corner_radius="25dp"
+		app:riv_mutate_background="true"
+		app:riv_oval="true"
+		app:riv_tile_mode="repeat"
+		/>
+</LinearLayout>

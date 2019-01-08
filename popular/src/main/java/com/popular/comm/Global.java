@@ -131,7 +131,7 @@ public class Global {
 	 * 设置全屏沉侵式效果
 	 * 调用此方法后，界面内容可以延伸显示到状态栏上，状态栏会变成透明色
 	 */
-	public static void setNoStatusBarFullMode(Activity activity) {
+	public static void  setNoStatusBarFullMode(Activity activity) {
 		// sdk 4.4
 		if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
 			Window window = activity.getWindow();
@@ -149,7 +149,7 @@ public class Global {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 			Window window = activity.getWindow();
 			window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-			window.setStatusBarColor(Color.TRANSPARENT);
+			window.setStatusBarColor(Color.BLUE);
 			// TRANSLUCENT： 半透明
 			// TRANSPARENT： 透明
 			return;
