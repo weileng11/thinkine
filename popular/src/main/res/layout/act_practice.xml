@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="eventbus"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="pop"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="圆"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="图片选择"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="手势锁"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="权限"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="滑动"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="zxing"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="dialogplus 全局对话框"
+			/>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="mmkv替代sp"
+			/>
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
