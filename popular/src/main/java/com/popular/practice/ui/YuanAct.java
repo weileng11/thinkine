@@ -1,4 +1,4 @@
-package com.popular.practice;
+package com.popular.practice.ui;
 
 import com.popular.R;
 import com.popular.comm.BaseActivity;
@@ -7,7 +7,7 @@ import com.popular.comm.BaseActivity;
  * @author: ${bruce}
  * @project: thinkine
  * @package: com.popular.practice
- * @description:
+ * @description:圆
  * @date: 2019/1/8  
  * @time: 15:50
  */

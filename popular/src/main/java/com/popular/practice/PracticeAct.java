@@ -21,6 +21,7 @@ import com.popular.comm.Global;
 import com.popular.comm.SaveUtil;
 import com.popular.practice.annotation.BindEventBus;
 import com.popular.practice.bean.EventBusTest;
+import com.popular.practice.ui.*;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 import com.zyyoona7.popup.EasyPopup;
 import org.greenrobot.eventbus.EventBus;
@@ -73,6 +74,11 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	Button mBtnMmkv;
 	@BindView(R.id.btn_fingerprint)
 	Button btnFingerprint;
+	@BindView(R.id.btn_richeditor)
+	Button btnRicheditor;
+	@BindView(R.id.btn_toast)
+	Button btnToast;
+	
 	@BindView(R.id.ll_count)
 	LinearLayout mLlCount;
 	
@@ -97,7 +103,7 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	@OnClick({
 			         R.id.btn_eventbus, R.id.btn_pop, R.id.btn_yuan, R.id.btn_select_tp,
 			         R.id.btn_lock, R.id.btn_quanxian, R.id.btn_hd, R.id.btn_zxing, R.id.btn_dialog,
-			         R.id.btn_mmkv,R.id.btn_fingerprint
+			         R.id.btn_mmkv,R.id.btn_fingerprint,R.id.btn_richeditor,R.id.btn_toast
 	         })
 	public void onClick(View view){
 		switch(view.getId()){
@@ -145,6 +151,14 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 		//指纹识别
 		case R.id.btn_fingerprint:
 			showActivity(this,FingerprintAct.class);
+			break;
+		//富文本编辑
+		case R.id.btn_richeditor:
+			showActivity(this,RicheditorAct.class);
+			break;
+		//toast
+		case R.id.btn_toast:
+			showActivity(this,ToastAct.class);
 			break;
 		}
 	}

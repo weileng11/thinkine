@@ -1,4 +1,4 @@
-package com.popular.practice;
+package com.popular.practice.ui;
 
 import android.annotation.TargetApi;
 import android.app.KeyguardManager;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.popular.R;
 import com.popular.comm.BaseActivity;
 import com.popular.comm.Global;
-import com.popular.practice.fm.FingerprintDialogFragment;
+import com.popular.practice.ui.fm.FingerprintDialogFragment;
 import java.security.KeyStore;
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

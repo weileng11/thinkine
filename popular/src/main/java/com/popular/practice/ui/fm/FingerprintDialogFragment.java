@@ -1,4 +1,4 @@
-package com.popular.practice.fm;
+package com.popular.practice.ui.fm;
 
 import android.annotation.TargetApi;
 import android.app.DialogFragment;
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.popular.R;
-import com.popular.practice.FingerprintAct;
+import com.popular.practice.ui.FingerprintAct;
 import javax.crypto.Cipher;
 
 @TargetApi(23)

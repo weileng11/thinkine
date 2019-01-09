@@ -1,4 +1,4 @@
-package com.popular.practice;
+package com.popular.practice.ui;
 
 import android.graphics.Bitmap;
 import android.support.v4.app.Fragment;
@@ -18,7 +18,7 @@ import butterknife.OnClick;
  * @author: ${bruce}
  * @project: thinkine
  * @package: com.popular.practice
- * @description:
+ * @description: 二维码
  * @date: 2019/1/8  
  * @time: 17:02
  */

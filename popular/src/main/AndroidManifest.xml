@@ -28,7 +28,9 @@
 	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.READ_LOGS"
+		tools:ignore="ProtectedPermissions"
+		/>
 	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 	<application
 		android:name=".App"
@@ -49,9 +51,11 @@
 		</activity>
 		
 		<activity android:name=".practice.PracticeAct"/>
-		<activity android:name=".practice.YuanAct"/>
-		<activity android:name=".practice.GestureAct"/>
-		<activity android:name=".practice.ZxingAct"/>
-		<activity android:name=".practice.FingerprintAct"/>
+		<activity android:name=".practice.ui.FingerprintAct"/>
+		<activity android:name=".practice.ui.GestureAct"/>
+		<activity android:name=".practice.ui.YuanAct"/>
+		<activity android:name=".practice.ui.ZxingAct"/>
+		<activity android:name=".practice.ui.RicheditorAct"/>
+		<activity android:name=".practice.ui.ToastAct"/>
 	</application>
 </manifest>

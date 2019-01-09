@@ -1,4 +1,4 @@
-package com.popular.practice;
+package com.popular.practice.ui;
 
 import android.text.TextUtils;
 import android.view.View;
@@ -15,7 +15,7 @@ import butterknife.BindView;
  * @author: ${bruce}
  * @project: thinkine
  * @package: com.popular.practice
- * @description:
+ * @description: 手势密码
  * @date: 2019/1/8  
  * @time: 16:31
  */
