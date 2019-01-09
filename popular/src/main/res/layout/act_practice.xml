@@ -82,5 +82,12 @@
 			android:layout_height="40dp"
 			android:text="mmkv替代sp"
 			/>
+		
+		<Button
+			android:id="@+id/btn_fingerprint"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="指纹识别"
+			/>
 	</LinearLayout>
 </android.support.v4.widget.NestedScrollView>

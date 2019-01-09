@@ -71,6 +71,8 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	Button mBtnDialog;
 	@BindView(R.id.btn_mmkv)
 	Button mBtnMmkv;
+	@BindView(R.id.btn_fingerprint)
+	Button btnFingerprint;
 	@BindView(R.id.ll_count)
 	LinearLayout mLlCount;
 	
@@ -95,7 +97,7 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	@OnClick({
 			         R.id.btn_eventbus, R.id.btn_pop, R.id.btn_yuan, R.id.btn_select_tp,
 			         R.id.btn_lock, R.id.btn_quanxian, R.id.btn_hd, R.id.btn_zxing, R.id.btn_dialog,
-			         R.id.btn_mmkv
+			         R.id.btn_mmkv,R.id.btn_fingerprint
 	         })
 	public void onClick(View view){
 		switch(view.getId()){
@@ -139,6 +141,10 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 		case R.id.btn_mmkv:
 			SaveUtil.saveKey("2222","33333");
 			Global.showToast(SaveUtil.loadKey());
+			break;
+		//指纹识别
+		case R.id.btn_fingerprint:
+			showActivity(this,FingerprintAct.class);
 			break;
 		}
 	}
