@@ -102,5 +102,12 @@
 			android:layout_height="40dp"
 			android:text="toast"
 			/>
+		
+		<Button
+			android:id="@+id/btn_image"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="Glide 图像转换器"
+			/>
 	</LinearLayout>
 </android.support.v4.widget.NestedScrollView>

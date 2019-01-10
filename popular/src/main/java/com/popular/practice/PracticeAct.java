@@ -78,6 +78,8 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	Button btnRicheditor;
 	@BindView(R.id.btn_toast)
 	Button btnToast;
+	@BindView(R.id.btn_image)
+	Button btnImage;
 	
 	@BindView(R.id.ll_count)
 	LinearLayout mLlCount;
@@ -103,7 +105,8 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 	@OnClick({
 			         R.id.btn_eventbus, R.id.btn_pop, R.id.btn_yuan, R.id.btn_select_tp,
 			         R.id.btn_lock, R.id.btn_quanxian, R.id.btn_hd, R.id.btn_zxing, R.id.btn_dialog,
-			         R.id.btn_mmkv,R.id.btn_fingerprint,R.id.btn_richeditor,R.id.btn_toast
+			         R.id.btn_mmkv,R.id.btn_fingerprint,R.id.btn_richeditor,R.id.btn_toast,
+			         R.id.btn_image
 	         })
 	public void onClick(View view){
 		switch(view.getId()){
@@ -159,6 +162,9 @@ public class PracticeAct extends BaseActivity implements EasyPermissions.Permiss
 		//toast
 		case R.id.btn_toast:
 			showActivity(this,ToastAct.class);
+			break;
+		case R.id.btn_image:
+			showActivity(this,ActImageDispose.class);
 			break;
 		}
 	}

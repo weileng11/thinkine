@@ -74,8 +74,8 @@ public class ToastAct extends BaseActivity
 			Toasty.warning(this,"44444").show();
 			break;
 		case R.id.t5:
-			Toasty.normal(this,"555555",Toast.LENGTH_SHORT).show();
-			Toasty.normal(this,mT5.getText().toString(), getResources().getDrawable(R.drawable.bg)).show();
+			//Toasty.normal(this,"555555",Toast.LENGTH_SHORT).show();
+			//Toasty.normal(this,mT5.getText().toString(), getResources().getDrawable(R.drawable.bg)).show();
 			showCustom();
 			break;
 		}

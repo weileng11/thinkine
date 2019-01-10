@@ -57,5 +57,6 @@
 		<activity android:name=".practice.ui.ZxingAct"/>
 		<activity android:name=".practice.ui.RicheditorAct"/>
 		<activity android:name=".practice.ui.ToastAct"/>
+		<activity android:name=".practice.ui.ActImageDispose"/>
 	</application>
 </manifest>
