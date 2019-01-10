@@ -81,4 +81,8 @@ dependencies{
 	
 	// GPUImage  https://github.com/cats-oss/android-gpuimage
 	implementation 'jp.co.cyberagent.android:gpuimage:2.0.3'
+	
+	//https://github.com/weileng11/Skeleton-master  Android 骨架屏效果，了解一下
+	implementation 'com.ethanhua:skeleton:1.1.2'
+	implementation 'io.supercharge:shimmerlayout:2.1.0'
 }
