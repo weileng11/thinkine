@@ -85,4 +85,7 @@ dependencies{
 	//https://github.com/weileng11/Skeleton-master  Android 骨架屏效果，了解一下
 	implementation 'com.ethanhua:skeleton:1.1.2'
 	implementation 'io.supercharge:shimmerlayout:2.1.0'
+	
+	//https://github.com/tyrantgit/ExplosionField
+	implementation 'tyrantgit:explosionfield:1.0.1'
 }
