@@ -88,4 +88,9 @@ dependencies{
 	
 	//https://github.com/tyrantgit/ExplosionField
 	implementation 'tyrantgit:explosionfield:1.0.1'
+	
+    //水波纹 https://github.com/traex/RippleEffect  6.0版本有问题，暂时没有修复
+//	implementation 'com.github.traex.rippleeffect:library:1.3'
+	//https://github.com/patrickpissurno/RippleEffect/  修复6.0的奔溃问题
+	implementation 'com.patrickpissurno:ripple-effect:1.3.1'
 }
