@@ -11,6 +11,8 @@ import com.andexert.library.RippleView;
 import com.ethanhua.skeleton.Skeleton;
 import com.ethanhua.skeleton.SkeletonScreen;
 import com.popular.comm.BaseActivity;
+import com.popular.practice.PracticeAct;
+import com.popular.practice.ui.DialogTestAct;
 import java.lang.ref.WeakReference;
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -108,6 +110,10 @@ public class MainAct extends BaseActivity
 	
 	@OnClick(R.id.btn_practice)
 	public void onClick(){
-		//showActivity(this, PracticeAct.class);
+		showActivity(this, PracticeAct.class);
+	}
+	
+	public void dialogfm(View view) {
+		showActivity(this, DialogTestAct.class);
 	}
 }

@@ -1,4 +1,4 @@
-package com.popular.practice.ui.fm;
+package com.popular.practice.ui.fmdialog;
 
 import android.annotation.TargetApi;
 import android.app.DialogFragment;

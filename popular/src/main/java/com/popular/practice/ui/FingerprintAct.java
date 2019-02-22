@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.popular.R;
 import com.popular.comm.BaseActivity;
 import com.popular.comm.Global;
-import com.popular.practice.ui.fm.FingerprintDialogFragment;
+import com.popular.practice.ui.fmdialog.FingerprintDialogFragment;
 import java.security.KeyStore;
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

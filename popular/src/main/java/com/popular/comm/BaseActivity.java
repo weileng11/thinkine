@@ -6,7 +6,6 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import com.gyf.barlibrary.ImmersionBar;
@@ -14,6 +13,8 @@ import com.popular.R;
 import com.popular.practice.annotation.BindEventBus;
 import org.greenrobot.eventbus.EventBus;
 import butterknife.ButterKnife;
+import me.imid.swipebacklayout.lib.SwipeBackLayout;
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 /**
  Activity基类，所有的Activity都需要继承此类。
@@ -21,14 +22,25 @@ import butterknife.ButterKnife;
  toast, showDialog, showProgressDialog等方法
  @author WJQ
  */
-public abstract class BaseActivity extends AppCompatActivity implements IUIOperation
+public abstract class BaseActivity extends SwipeBackActivity implements IUIOperation
 {
+	private SwipeBackLayout mSwipeBackLayout;
 	@Override
 	protected void onCreate(Bundle bundle){
 		super.onCreate(bundle);
 		int layoutn=getLayoutRes();
 		if(!(layoutn==-1 || layoutn==0)) setContentView(layoutn);
 		ButterKnife.bind(this);
+		
+		// 可以调用该方法，设置是否允许滑动退出
+		setSwipeBackEnable(true);
+		mSwipeBackLayout = getSwipeBackLayout();
+		// 设置滑动方向，可设置EDGE_LEFT, EDGE_RIGHT, EDGE_ALL, EDGE_BOTTOM
+		mSwipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
+		// 滑动退出的效果只能从边界滑动才有效果，如果要扩大touch的范围，可以调用这个方法
+		//mSwipeBackLayout.setEdgeSize(200);
+		
+		
 		//Global.setNoStatusBarFullMode(this);//沉浸式
 		////常亮
 		//getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);

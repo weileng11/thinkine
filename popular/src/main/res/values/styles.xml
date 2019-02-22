@@ -7,5 +7,26 @@
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
 		<item name="windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+	
+	<style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="android:windowIsTranslucent">false</item>
+	</style>
+	
+	<!--BaseDialog样式-->
+	<style name="BaseDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowSoftInputMode">adjustPan</item>
+		<item name="android:windowIsFloating">true</item>
+	</style>
+	
+	<!--Dialog进入退出动画-->
+	<style name="EnterExitAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/enter_anim</item>
+		<item name="android:windowExitAnimation">@anim/exit_anim</item>
 	</style>
 </resources>

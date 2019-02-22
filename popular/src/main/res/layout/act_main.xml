@@ -19,6 +19,24 @@
 		/>
 	
 	<com.andexert.library.RippleView
+		android:id="@+id/more1"
+		android:layout_width="match_parent"
+		android:layout_height="?android:actionBarSize"
+		android:layout_toLeftOf="@+id/more2"
+		ripple:rv_centered="true"
+		>
+		
+		<Button
+			android:id="@+id/btn_dialog"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="DialogFragment"
+			android:onClick="dialogfm"
+			tools:ignore="OnClick"
+			/>
+	</com.andexert.library.RippleView>
+	
+	<com.andexert.library.RippleView
 		android:id="@+id/more"
 		android:layout_width="match_parent"
 		android:layout_height="?android:actionBarSize"

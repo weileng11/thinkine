@@ -59,5 +59,6 @@
 		<activity android:name=".practice.ui.RicheditorAct"/>
 		<activity android:name=".practice.ui.ToastAct"/>
 		<activity android:name=".practice.ui.ActImageDispose"/>
+		<activity android:name=".practice.ui.DialogTestAct"/>
 	</application>
 </manifest>
