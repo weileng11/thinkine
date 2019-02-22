@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:ripple="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/ll_main"
@@ -10,74 +10,95 @@
 	tools:context=".MainAct"
 	>
 	
-	<ImageView
-		android:id="@+id/img_banner"
+	<com.popular.practice.ui.view.ObservableScrollView
+		android:id="@+id/sv_main_content"
 		android:layout_width="match_parent"
-		android:layout_height="160dp"
-		android:scaleType="centerCrop"
-		android:src="@drawable/girl"
-		/>
-	
-	<com.andexert.library.RippleView
-		android:id="@+id/more1"
-		android:layout_width="match_parent"
-		android:layout_height="?android:actionBarSize"
-		android:layout_toLeftOf="@+id/more2"
-		ripple:rv_centered="true"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:scrollbars="none"
 		>
 		
-		<Button
-			android:id="@+id/btn_dialog"
+		<LinearLayout
 			android:layout_width="match_parent"
-			android:layout_height="60dp"
-			android:text="DialogFragment"
-			android:onClick="dialogfm"
-			tools:ignore="OnClick"
-			/>
-	</com.andexert.library.RippleView>
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+			
+			<ImageView
+				android:id="@+id/img_banner"
+				android:layout_width="match_parent"
+				android:layout_height="260dp"
+				android:scaleType="centerCrop"
+				android:src="@drawable/girl"
+				/>
+			
+			<com.andexert.library.RippleView
+				android:id="@+id/more1"
+				android:layout_width="match_parent"
+				android:layout_height="?android:actionBarSize"
+				android:layout_toLeftOf="@+id/more2"
+				ripple:rv_centered="true"
+				>
+				
+				<Button
+					android:id="@+id/btn_dialog"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:onClick="dialogfm"
+					android:text="DialogFragment"
+					tools:ignore="OnClick"
+					/>
+			</com.andexert.library.RippleView>
+			
+			<com.andexert.library.RippleView
+				android:id="@+id/more"
+				android:layout_width="match_parent"
+				android:layout_height="?android:actionBarSize"
+				android:layout_toLeftOf="@+id/more2"
+				ripple:rv_centered="true"
+				>
+				
+				<Button
+					android:id="@+id/btn_practice"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:text="练习功能使用"
+					/>
+			</com.andexert.library.RippleView>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal"
+				>
+				
+				<ImageView
+					android:id="@+id/iv1"
+					android:layout_width="72dp"
+					android:layout_height="72dp"
+					android:layout_weight="1"
+					android:onClick="onClick"
+					android:src="@drawable/girl"
+					tools:ignore="OnClick"
+					/>
+				
+				<ImageView
+					android:id="@+id/iv2"
+					android:layout_width="72dp"
+					android:layout_height="72dp"
+					android:layout_weight="1"
+					android:onClick="onClick"
+					android:src="@drawable/ic_launcher"
+					tools:ignore="OnClick"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+	</com.popular.practice.ui.view.ObservableScrollView>
 	
-	<com.andexert.library.RippleView
-		android:id="@+id/more"
-		android:layout_width="match_parent"
-		android:layout_height="?android:actionBarSize"
-		android:layout_toLeftOf="@+id/more2"
-		ripple:rv_centered="true"
-		>
-		
-		<Button
-			android:id="@+id/btn_practice"
-			android:layout_width="match_parent"
-			android:layout_height="60dp"
-			android:text="练习功能使用"
-			/>
-	</com.andexert.library.RippleView>
 	
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_weight="1"
-		android:gravity="center"
-		android:orientation="horizontal"
-		>
-		
-		<ImageView
-			android:id="@+id/iv1"
-			android:layout_width="72dp"
-			android:layout_height="72dp"
-			android:layout_weight="1"
-			android:onClick="onClick"
-			android:src="@drawable/girl"
-			tools:ignore="OnClick"
-			/>
-		
-		<ImageView
-			android:id="@+id/iv2"
-			android:layout_width="72dp"
-			android:layout_height="72dp"
-			android:layout_weight="1"
-			android:onClick="onClick"
-			android:src="@drawable/ic_launcher"
-			tools:ignore="OnClick"
-			/>
-	</LinearLayout>
-</LinearLayout>
+	<include layout="@layout/include_header_itl" />
+</RelativeLayout>
