@@ -53,3 +53,9 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:cardview-v7:27.1.1'
+
+
+
+
+    Android应用图标微技巧，8.0系统中应用图标的适配
+    https://blog.csdn.net/guolin_blog/article/details/79417483
