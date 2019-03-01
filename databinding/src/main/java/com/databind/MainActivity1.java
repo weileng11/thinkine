@@ -12,7 +12,7 @@ import com.databind.activity.RecyclerViewActivity;
 import com.databind.databinding.ActivityMain1Binding;
 
 /**
- * DataBinding
+ * DataBinding  https://www.jianshu.com/p/70316eb4e0f8
  */
 public class MainActivity1 extends AppCompatActivity implements View.OnClickListener {
 	
