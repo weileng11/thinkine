@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/databinding/databinding.iml" filepath="$PROJECT_DIR$/databinding/databinding.iml" />
       <module fileurl="file://$PROJECT_DIR$/popular/popular.iml" filepath="$PROJECT_DIR$/popular/popular.iml" />
       <module fileurl="file://$PROJECT_DIR$/thinkine.iml" filepath="$PROJECT_DIR$/thinkine.iml" />
       <module fileurl="file://$PROJECT_DIR$/wl-utils/wl-utils.iml" filepath="$PROJECT_DIR$/wl-utils/wl-utils.iml" />

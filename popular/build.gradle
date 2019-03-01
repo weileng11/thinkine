@@ -64,8 +64,7 @@ dependencies{
 	implementation "cn.yipianfengye.android:zxing-library:2.2"
 	//dialogplus 全局对话框
 	implementation 'com.orhanobut:dialogplus:1.11@aar'
-	//logger
-	implementation "com.orhanobut:logger:2.2.0"
+	
 	//mmkv替代sp
 	implementation "com.tencent:mmkv:1.0.13"
 	

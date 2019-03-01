@@ -1,1 +1,1 @@
-include ':app', ':wl-utils', ':popular'
+include ':app', ':wl-utils', ':popular', ':databinding'
