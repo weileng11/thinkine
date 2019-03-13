@@ -1,4 +1,4 @@
-package com.gallery.fancycoverflow;
+package com.gallery.fancycoverflow2;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,9 +13,10 @@ import android.view.animation.Transformation;
 import android.widget.Gallery;
 import android.widget.SpinnerAdapter;
 import com.gallery.R;
+import com.gallery.fancycoverflow.ViewUtil;
 
 /**
- 没有背影效果
+  有背影效果
  */
 public class FancyCoverFlow extends Gallery {
 
@@ -276,7 +277,7 @@ public class FancyCoverFlow extends Gallery {
 
 				imageMatrix
 						.postTranslate(
-								(float) (ViewUtil.Dp2Px(getContext(), 25) * translateFactor),
+								(float) (ViewUtil.Dp2Px(getContext(), 25)*translateFactor),
 								0);
 
 			}

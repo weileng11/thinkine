@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="143dp"
+	android:layout_height="189dp"
+	android:orientation="vertical"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:background="@drawable/rectangle_bg"
+	>
+	<!--<ImageView-->
+	<!--android:id="@+id/img"-->
+	<!--android:layout_width="143dp"-->
+	<!--android:layout_height="189dp"-->
+	<!--android:background="@mipmap/ic_launcher"-->
+	<!--android:scaleType="centerCrop"-->
+	<!--/>-->
+	<ImageView
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="center"
+		android:background="@drawable/ic_launcher"
+		/>
+	
+	<TextView
+		android:id="@+id/txv_add_device"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="添加设备"
+		android:textSize="14sp"
+		/>
+</LinearLayout>

@@ -15,36 +15,13 @@ public class FilmInfo implements Serializable {
 	private String filmName;
 	private String filmImageLink;
 	private String fileDetailUrl;
-	
-	private int rs;
 
-	public FilmInfo(String filmName, String filmImageLink, String fileDetailUrl,int resIds) {
+	public FilmInfo(String filmName, String filmImageLink, String fileDetailUrl) {
 		super();
 		this.filmName = filmName;
 		this.filmImageLink = filmImageLink;
 		this.fileDetailUrl = fileDetailUrl;
-		this.rs=resIds;
 	}
-
-	
-	
-
-
-	public int getRs() {
-		return rs;
-	}
-
-
-
-
-
-	public void setRs(int rs) {
-		this.rs = rs;
-	}
-
-
-
-
 
 	public String getFilmName() {
 		return filmName;
