@@ -62,6 +62,7 @@ public class ThemeActivity extends BaseActivity {
     public void initAllViews() {
         setContentView(R.layout.activity_theme);
         ButterKnife.bind(ThemeActivity.this);
+	    //tag_is_animation=true;
     }
 
     @Override

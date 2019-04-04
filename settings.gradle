@@ -1,1 +1,1 @@
-include ':app', ':wl-utils', ':popular', ':databinding', ':gallery', ':theme'
+include ':app', ':wl-utils', ':popular', ':databinding', ':gallery', ':theme', ':drawlayout'
