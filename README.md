@@ -126,8 +126,27 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 ### 9.个人常用库
 
-- EasyPopup 对 PopupWindow 的封装，使得在项目中使用起来更加简单、方便、快捷
+- EasyPopup 对 PopupWindow 的封装，使得在项目中使用起来更加简单、方便、快捷 [EasyPopup](https://github.com/zyyoona7/EasyPopup)
 
--SwipeRecyclerView RecyclerView侧滑菜单，滑动删除，长按拖拽，下拉刷新上拉加载 [VERSION_CODE](https://github.com/yanzhenjie/SwipeRecyclerView)
+- SwipeRecyclerView RecyclerView侧滑菜单，滑动删除，长按拖拽，下拉刷新上拉加载 [SwipeRecyclerView](https://github.com/yanzhenjie/SwipeRecyclerView)
 
- 
+- RoundedImageView Android图片圆角转换 RoundedImageView开源项目[RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
+
+- PatternLocker Android 图形解锁／手势解锁 / 手势密码 / 图案密码 / 九宫格密码 [PatternLocker](https://github.com/ihsg/PatternLocker)
+
+- autodispose Android架构中添加AutoDispose解决RxJava内存泄漏 [autodispose](https://blog.csdn.net/mq2553299/article/details/79418068)
+
+- zxing 扫码 [zxing](https://github.com/yipianfengye/android-zxingLibrary)
+
+- pub.devrel:easypermissions  Easypermissions简化了Android M的运行时权限的申请、结果处理、判断等步骤 [权限](https://www.jianshu.com/p/2b3661928e66)
+
+- toast 性能最优、使用最简单，支持自定义，不需要通知栏权限的吐司 [toast](https://github.com/getActivity/ToastUtils)
+
+- mmkv MMKV 是基于 mmap 内存映射的移动端通用 key-value 组件，底层序列化/反序列化使用 protobuf 实现，性能高，稳定性强。[MMKV](https://github.com/tencent/mmkv)
+
+- bluetooth    库用于Android蓝牙BLE设备通信，支持设备扫描，连接，读写，通知。[bluetooth](https://github.com/dingjikerbo/Android-BluetoothKit)
+
+- autosize 今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案 [autosize](https://github.com/JessYanCoding/AndroidAutoSize)
+
+- FlycoTabLayout 一个Android TabLayout库,目前有两个TabLayout [FlycoTabLayout](https://www.jianshu.com/p/9c32f1804cd1)
+
