@@ -83,3 +83,45 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
  
 - RxBinding，是 Jake Wharton 的一个开源库，它提供了一套在 Android 平台上的基于 RxJava的 Binding API。所谓 Binding，就是类似设置 OnClickListener 、设置 TextWatcher 这样的注册绑定对象的 API。
 
+### 3.注入注解框架
+
+- Butterknife，出自大神JakeWharton，绑定视图和回调字段和方法。例如，减少了findViewById()的繁琐操作。
+
+- Dagger2，与Spring 的IOC差不多吧。这个框架它的好处是它没有采用反射技术（Spring是用反射的）,而是用预编译技术，因为基于反射的DI非常地耗用资源（空间，时间）。
+
+### 4.设计模式
+
+- MVP，因为 Android 并没有严格的业务和界面区分，项目一庞大，就很容易使代码结构显得越来越乱。现在 Android 端对 MVP 模式讨论越来越热，谷歌6.0API以及更多的体现了MVP设计思维，觉得 MVP 是非常适合 Android 上的APP 开发。
+
+- MVVM ，这是因为开始官方支持 DataBinding，把 MVVM 直接带到 Android 中。数据绑定在 Windows WPF 和 Web （尤其JSP中）已经非常常见，它非常高效的开发效率，让你只关心你的数据和业务。这也对 Android 开发来说，无疑是一个非常重大的里程碑
+
+### 5.UI框架
+- BaseRecyclerViewAdapterHelper使用——RecyclerView万能适配器。
+
+- PinnedSectionItemDecoration：强大的粘性标签库
+
+- EasyRefreshLayout：    轻松实现下拉刷新和上拉更多
+
+- EasySwipeMenuLayout：仿IOS侧滑删除
+
+- SmartRefreshLayout，下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。 也吸取了现在流行的各种刷新布局的优点，包括谷歌官方的 SwipeRefreshLayout，其他第三方的 Ultra-Pull-To-Refresh、TwinklingRefreshLayout 。还集成了各种炫酷的 Header 和 Footer。
+
+- android-gif-drawable，用于在Android上显示动画GIF的视图和Drawable。
+
+- PhotoView ，用于在Android上通过各种触摸手势实现支持缩放的图片的框架。
+
+### 6.网络请求库
+
+- okhttp，在Android开发中，它已经成为眼下最火的http请求框架了。
+
+- Retrofit，与okhttp共同出自于Square公司，retrofit就是对okhttp做了一层封装。把网络请求都交给给了Okhttp，我们只需要通过简单的配置就能使用retrofit来进行网络请求了，其主要作者也是Android大神JakeWharton。
+
+### 日志打印库
+
+- logger，简单,漂亮的android和强大的记录器。
+
+### 权限请求库
+
+- RxPermissions，API23以上Android 6.0项目分为普通权限和危险权限，该库在项目运行时动态进行权限请求，支持RxJava2。
+
+ 
