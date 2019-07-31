@@ -116,11 +116,11 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - Retrofit，与okhttp共同出自于Square公司，retrofit就是对okhttp做了一层封装。把网络请求都交给给了Okhttp，我们只需要通过简单的配置就能使用retrofit来进行网络请求了，其主要作者也是Android大神JakeWharton。
 
-### 日志打印库
+### 7.日志打印库
 
 - logger，简单,漂亮的android和强大的记录器。
 
-### 权限请求库
+### 8.权限请求库
 
 - RxPermissions，API23以上Android 6.0项目分为普通权限和危险权限，该库在项目运行时动态进行权限请求，支持RxJava2。
 
