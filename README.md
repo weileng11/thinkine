@@ -54,6 +54,26 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:cardview-v7:27.1.1'
 
+    //适配
+    implementation "me.jessyan:autosize:$rootProject.ext.autosizeVersion"
+    implementation "net.qiujuer.genius:kit-handler:$rootProject.ext.geniusVersion"
+
+    //	implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    implementation 'com.github.weileng11:InfiniteCycleViewPager-master:1.0.4'
+
+    //引导蒙层
+    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+    implementation project(':mzbanner')
+    implementation project(':loopbanner')
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    implementation project(path: ':xLog')
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.3'
+
+    //    implementation 'com.elvishew:xlog:1.6.1'
+    implementation 'com.github.WenHuayu:GlidePlaceholderDrawable:1.0.0'
+    implementation project(path: ':common')
+
+    implementation 'com.necer.ncalendar:ncalendar:4.0.2'
 
 
 
