@@ -57,5 +57,10 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 
 
-    Android应用图标微技巧，8.0系统中应用图标的适配
-    https://blog.csdn.net/guolin_blog/article/details/79417483
+  Android应用图标微技巧，8.0系统中应用图标的适配
+  https://blog.csdn.net/guolin_blog/article/details/79417483
+
+
+
+
+  Android 必须知道2018年流行的框架库及开发语言，看这一篇就够了
