@@ -124,4 +124,10 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - RxPermissions，API23以上Android 6.0项目分为普通权限和危险权限，该库在项目运行时动态进行权限请求，支持RxJava2。
 
+### 9.个人常用库
+
+- EasyPopup 对 PopupWindow 的封装，使得在项目中使用起来更加简单、方便、快捷
+
+-SwipeRecyclerView RecyclerView侧滑菜单，滑动删除，长按拖拽，下拉刷新上拉加载 [VERSION_CODE](https://github.com/yanzhenjie/SwipeRecyclerView)
+
  
