@@ -170,3 +170,5 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - FlycoTabLayout 一个Android TabLayout库,目前有两个TabLayout [FlycoTabLayout](https://www.jianshu.com/p/9c32f1804cd1)
 
+- SwipeBackHelper 使用物理返回键的情况下舍去了返回的Button [SwipeBackHelper](https://blog.csdn.net/ddwhan0123/article/details/48261597)
+
