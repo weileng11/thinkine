@@ -172,3 +172,7 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - SwipeBackHelper 使用物理返回键的情况下舍去了返回的Button [SwipeBackHelper](https://blog.csdn.net/ddwhan0123/article/details/48261597)
 
+
+
+-  参考 [Android博客周刊](http://androidblog.cn/index.php/Index/detail/id/89)
+
