@@ -88,62 +88,6 @@ android {
         abortOnError false
     }
 
-
-//    sourceSets {
-//        assets.srcDirs = ['src/assets']
-//        smartlock{
-//            assets.srcDirs=['src/smartlock/assets']
-//        }
-//        ugogo{
-//            assets.srcDirs=['src/ugogo/assets']
-//        }
-//    }
-
-//    walle {
-//        // 指定渠道包的输出路径
-//        apkOutputFolder = new File("${project.rootDir}/output/channels/")
-//        // 定制渠道包的APK的文件名称
-//        apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk'
-//        // 渠道配置文件
-//        channelFile = new File("${project.getProjectDir()}/channel")
-//    }
-//
-//    productFlavors.all{flavor->
-//        flavor.manifestPlaceholders=[UMENG_CHANNEL_VALUE:name]
-//    }
-
-//    //定义一个装apk文件路径的数组
-//    def fileArray = []
-//    android.applicationVariants.all { variant ->
-//        variant.outputs.all { output ->
-//            def outputFile = output.outputFile
-//            if (outputFile != null && outputFile.name.contains('release')) {
-//                //获取每个打包产物
-//                def variantProd = variant.productFlavors[0]
-//                def fileName = "huayi_${variantProd.versionName}_${variantProd.versionCode}" + "_${variantProd.name}.apk"
-//                println "自定义输出apk的名字:" + fileName
-//                outputFileName = fileName
-//                println "输出apk地址:" + outputFile.parentFile.absolutePath + java.io.File.separator + fileName
-//                println "输出apk地址2:"+'F:/android_project/smartLock/smartlock/app/release'
-//                println "输出apk地址3:"+rootDir.parentFile.getAbsolutePath()
-//
-////                fileArray.add(outputFile.parentFile.absolutePath  + fileName)
-////                outputFileName = new File("F:/android_project/smartLock/smartlock/app/release/", fileName)
-//                ////指定release输出到指定文件夹
-//                variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\",fileName)
-//            }
-//
-//        }
-//
-//    }
-//
-//    build {
-//        doLast() {
-//            println "任务1编译打包完成后需要复制apk的数量:" + fileArray.size()
-//            forEachFile(fileArray)
-//        }
-//    } 12345678910
-
     // 修改打包 apk 名字
     applicationVariants.all { variant ->
         variant.outputs.all {output ->
@@ -157,20 +101,22 @@ android {
                     chineseName = "Ugogo"
                     break
             }
-            if (variant.buildType.name.equals('release')) {
+            if (variant.buildType.name.equals('release')){
+                //指定release输出到指定文件夹
+                variant.getPackageApplication().outputDirectory = new File("${rootDir.parentFile}/smartlock/app/release/")
                 if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                    //指定release输出到指定文件夹
-                    variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\")
+//                    //指定release输出到指定文件夹
+//                    variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\")
                     outputFileName = "${chineseName}_release_${productFlavors.versionName}_${signTime()}.apk"
                     //指定release输出到指定文件夹
 //                   variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\",outputFileName)
 
                 }
             } else if (variant.buildType.name.equals('debug')) {
-//                variant.getPackageApplication().outputDirectory = new File("${project.rootDir}/debug/")
+                variant.getPackageApplication().outputDirectory = new File("${project.rootDir}/app/debug/")
                 if (outputFile != null && outputFile.name.endsWith('.apk')) {
                     //指定release输出到指定文件夹
-                    variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\debug\\")
+//                  variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\debug\\")
                     outputFileName = "${chineseName}_debug_测试_${productFlavors.versionName}_${signTime()}.apk"
                 }
 
