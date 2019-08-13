@@ -1,0 +1,268 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+apply plugin: 'com.aliyun.ams.emas-services'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+//        applicationId "com.boray.smartlock"
+//        minSdkVersion 21
+//        targetSdkVersion 27
+//        versionCode 40
+//        versionName "1.0.40"
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk {
+//            //设置支持的SO库架构
+//            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+//        }
+
+    }
+
+    //差异化打包 (多渠道打包)
+    flavorDimensions 'heb'
+    //差异化打包
+    productFlavors {
+        smartlock {
+            applicationId "com.boray.smartlock"
+            minSdkVersion 21
+            targetSdkVersion 27
+            versionCode 44
+            versionName "1.0.44"
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            ndk {
+                //设置支持的SO库架构
+                abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            }
+
+            // 自动生成@string/app_name为demo
+//           resValue "string","app_name","@string/app_name"
+            manifestPlaceholders = [icon: "@mipmap/ic_launcher"]//label: "APP1"
+        }
+        ugogo {
+            applicationId "com.boray.ugogo"
+            minSdkVersion 21
+            targetSdkVersion 27
+            versionCode 5
+            versionName "1.0.5"
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            ndk {
+                //设置支持的SO库架构
+                abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            }
+            // 自动生成@string/app_name为demo
+//           resValue "string","app_name","@string/app_name"
+            manifestPlaceholders = [icon: "@mipmap/ic_launcher"]//label: "APP1"
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'Bosdon'
+            keyPassword 'bosdon110'
+            storeFile file('./Bosdon')
+            storePassword 'bosdon110'
+        }
+    }
+    buildTypes {
+        release {
+            resValue "string", "app_name", "@string/app_name_release"
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            resValue "string", "app_name", "@string/app_name_debug"
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+
+    dexOptions {
+        //最大堆内存
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+//    sourceSets {
+//        assets.srcDirs = ['src/assets']
+//        smartlock{
+//            assets.srcDirs=['src/smartlock/assets']
+//        }
+//        ugogo{
+//            assets.srcDirs=['src/ugogo/assets']
+//        }
+//    }
+
+//    walle {
+//        // 指定渠道包的输出路径
+//        apkOutputFolder = new File("${project.rootDir}/output/channels/")
+//        // 定制渠道包的APK的文件名称
+//        apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk'
+//        // 渠道配置文件
+//        channelFile = new File("${project.getProjectDir()}/channel")
+//    }
+//
+//    productFlavors.all{flavor->
+//        flavor.manifestPlaceholders=[UMENG_CHANNEL_VALUE:name]
+//    }
+
+//    //定义一个装apk文件路径的数组
+//    def fileArray = []
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.contains('release')) {
+//                //获取每个打包产物
+//                def variantProd = variant.productFlavors[0]
+//                def fileName = "huayi_${variantProd.versionName}_${variantProd.versionCode}" + "_${variantProd.name}.apk"
+//                println "自定义输出apk的名字:" + fileName
+//                outputFileName = fileName
+//                println "输出apk地址:" + outputFile.parentFile.absolutePath + java.io.File.separator + fileName
+//                println "输出apk地址2:"+'F:/android_project/smartLock/smartlock/app/release'
+//                println "输出apk地址3:"+rootDir.parentFile.getAbsolutePath()
+//
+////                fileArray.add(outputFile.parentFile.absolutePath  + fileName)
+////                outputFileName = new File("F:/android_project/smartLock/smartlock/app/release/", fileName)
+//                ////指定release输出到指定文件夹
+//                variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\",fileName)
+//            }
+//
+//        }
+//
+//    }
+//
+//    build {
+//        doLast() {
+//            println "任务1编译打包完成后需要复制apk的数量:" + fileArray.size()
+//            forEachFile(fileArray)
+//        }
+//    } 12345678910
+
+    // 修改打包 apk 名字
+    applicationVariants.all { variant ->
+        variant.outputs.all {output ->
+            def outputFile = output.outputFile
+            def chineseName = ""
+            switch (variant.productFlavors[0].name) {
+                case "smartlock":
+                    chineseName = "Bosdon"
+                    break
+                case "ugogo":
+                    chineseName = "Ugogo"
+                    break
+            }
+            if (variant.buildType.name.equals('release')) {
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    //指定release输出到指定文件夹
+                    variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\")
+                    outputFileName = "${chineseName}_release_${productFlavors.versionName}_${signTime()}.apk"
+                    //指定release输出到指定文件夹
+//                   variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\release\\",outputFileName)
+
+                }
+            } else if (variant.buildType.name.equals('debug')) {
+//                variant.getPackageApplication().outputDirectory = new File("${project.rootDir}/debug/")
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    //指定release输出到指定文件夹
+                    variant.getPackageApplication().outputDirectory = new File(rootDir.parentFile.getAbsolutePath()+"\\smartlock\\app\\debug\\")
+                    outputFileName = "${chineseName}_debug_测试_${productFlavors.versionName}_${signTime()}.apk"
+                }
+
+            }
+        }
+    }
+}
+
+def signTime() {
+    return new Date().format("yyyyMMdd")
+}
+
+
+bugly {
+    appId = 'da7e9b9f35' // 注册时分配的App ID
+    appKey = '232d2579-228a-45d7-853c-15851c5fd41d' // 注册时分配的App Key
+    debug = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-v4:$rootProject.ext.supportVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportVersion"
+    implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
+    implementation "net.qiujuer.genius:res:$rootProject.ext.geniusVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "com.android.support:support-v4:$rootProject.ext.supportVersion"
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
+
+    // Glide 包
+
+    //    implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+    implementation "org.greenrobot:eventbus:$rootProject.ext.eventbusVersion"
+    implementation "com.github.zyyoona7:EasyPopup:$rootProject.ext.easyPopupVersion"
+    implementation "com.yanzhenjie:recyclerview-swipe:$rootProject.ext.recyclerviewSwipeVersion"
+    implementation "com.lijunguan:imageseletor:$rootProject.ext.imageseletorVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+    implementation "com.makeramen:roundedimageview:$rootProject.ext.roundedimageviewVersion"
+    implementation "com.github.LuckSiege.PictureSelector:picture_library:$rootProject.ext.pictureLibraryVersion"
+    api "com.qiniu:qiniu-android-sdk:$rootProject.ext.qiniuAndroidSdkVersion"
+    implementation "com.github.ihsg:PatternLocker:$rootProject.ext.PatternLockerVersion"
+    implementation "com.kyleduo.switchbutton:library:$rootProject.ext.switchbuttonVersion"
+    implementation "com.uber.autodispose:autodispose:$rootProject.ext.autodisposeVersion"
+    implementation "com.uber.autodispose:autodispose-android:$rootProject.ext.autodisposeVersion"
+    implementation "com.uber.autodispose:autodispose-android-archcomponents:$rootProject.ext.autodisposeVersion"
+    implementation "cn.yipianfengye.android:zxing-library:$rootProject.ext.zxinglibraryVersion"
+    implementation "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
+    implementation "com.shizhefei:ViewPagerIndicator:$rootProject.ext.viewPagerIndicatorVersion"
+    implementation "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.ext.SmartRefreshLayoutVersion"
+
+    // 腾讯热更新
+    implementation "com.tencent.bugly:crashreport_upgrade:$rootProject.ext.Bugly_crashreport_upgrade_Version"
+    implementation "com.tencent.bugly:nativecrashreport:$rootProject.ext.Bugly_nativecrashreport_Version"
+    implementation 'com.aliyun.ams:alicloud-android-push:3.1.4@aar'
+    implementation 'com.aliyun.ams:alicloud-android-utils:1.1.3'
+    implementation 'com.aliyun.ams:alicloud-android-beacon:1.0.1'
+    implementation "com.hjq:toast:$rootProject.ext.ToastVersion"
+    implementation "com.tencent:mmkv:$rootProject.ext.mmkvVersion"
+    implementation "com.orhanobut:logger:$rootProject.ext.loggerVersion"
+    implementation "com.inuker.bluetooth:library:$rootProject.ext.bluetoothKitVersion"
+    implementation project(':picker')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //适配
+    implementation "me.jessyan:autosize:$rootProject.ext.autosizeVersion"
+    implementation "net.qiujuer.genius:kit-handler:$rootProject.ext.geniusVersion"
+
+    //	implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    implementation 'com.github.weileng11:InfiniteCycleViewPager-master:1.0.4'
+
+    //引导蒙层
+    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+    implementation project(':mzbanner')
+    implementation project(':loopbanner')
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    implementation project(path: ':xLog')
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.3'
+
+    //    implementation 'com.elvishew:xlog:1.6.1'
+    implementation 'com.github.WenHuayu:GlidePlaceholderDrawable:1.0.0'
+    implementation project(path: ':common')
+
+    implementation 'com.necer.ncalendar:ncalendar:4.0.2'
+}
