@@ -172,6 +172,11 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - SwipeBackHelper 使用物理返回键的情况下舍去了返回的Button [SwipeBackHelper](https://blog.csdn.net/ddwhan0123/article/details/48261597)
 
+### 10.网络好文章兼各种库
+
+- 滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
+- [说明文章](https://mp.weixin.qq.com/s/MGeo5NOHjDbj5bOZdg2iFw)
+
 
 
 -  参考 [Android博客周刊](http://androidblog.cn/index.php/Index/detail/id/89)
