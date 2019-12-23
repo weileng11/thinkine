@@ -174,10 +174,15 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 ### 10.网络好文章兼各种库
 
-- 滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
+- 1.滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
 - [说明文章](https://mp.weixin.qq.com/s/MGeo5NOHjDbj5bOZdg2iFw)
+- 2.Android权限请求库 [这可能是最好用、实现最简单的Android权限请求库了](https://blog.csdn.net/a1018875550/article/details/103533668)
+- 3.[自动轮播无限循环Android库](https://mp.weixin.qq.com/s/p2lhx7xj0YSNa_Fwnhwp8w) (https://github.com/zhpanvip/BannerViewPager/)
+- 4.[Android圆角ViewGrup](https://www.jianshu.com/p/3051b5d60c7c)
+- 5.[Android 界最万能的 TabLayout](https://github.com/angcyo/DslTabLayout)
 
-
+### 11.值得学习的文章
+- 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
 
 -  参考 [Android博客周刊](http://androidblog.cn/index.php/Index/detail/id/89)
 
