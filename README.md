@@ -180,9 +180,23 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 3.[自动轮播无限循环Android库](https://mp.weixin.qq.com/s/p2lhx7xj0YSNa_Fwnhwp8w) (https://github.com/zhpanvip/BannerViewPager/)
 - 4.[Android圆角ViewGrup](https://www.jianshu.com/p/3051b5d60c7c)
 - 5.[Android 界最万能的 TabLayout](https://github.com/angcyo/DslTabLayout)
+- 6.[下载要支持多任务并行下载](https://mp.weixin.qq.com/s/NGIlPFSSzaCD2grVJjGfHw)(https://github.com/AriaLyy/Aria)
+- 7.[RxHttp 让你眼前一亮的Http请求框架](https://juejin.im/post/5ded221a518825125d14a1d4)
+- 8.[网络请求只会用Retrofit？外国人已经在用Apollo Graphql了](https://mp.weixin.qq.com/s/Jp2wbwVCec3mAt08-0aBdg)
+- 9.[花式实现时间轴，样式由你来定](https://mp.weixin.qq.com/s/jNG_dRRhc3pDZK9fax4ycg)
+- 10.[Android 开发者的福利，介绍几款看源码的工具](https://zhuanlan.zhihu.com/p/100117330)
+- 11.[学不动也要学！探究Fragmen延迟加载的前世今生](https://juejin.im/post/5e085dafe51d45580769a1eb)
+- 12.[自定义控件通用库 WidgetCase](https://www.wanandroid.com/blog/show/2683)
 
 ### 11.值得学习的文章
 - 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
-
+- [作者说这是初级Android工程师的面经？吓到我了](https://mp.weixin.qq.com/s/-supfOYPfDB_PKs6f8WIPw)
+- [Kotlin系列 - 函数与类相关细节小结(二)](https://juejin.im/post/5dff8f1df265da33d21e8286)
+- [学习 View 事件分发，就像外地人上了黑车！](https://juejin.im/post/5d3140c951882565dd5a66ef)
+- [Android OKHttp 可能你从来没用过的拦截器 ](https://juejin.im/post/5ddddd2a6fb9a07161483fb2)
+- [学不动了系列，又来推荐一波优质项目咯 ](https://mp.weixin.qq.com/s/Aa4RIbWKzwQTLsdjmM16SA)
+- [Android 程序员不得不收藏的 90+ 个人博客(持续更新...](https://juejin.im/post/5e0389ec5188251281602a2e)
+- [小红书图片剪裁框架+微信图片选择器+超高清大图预览+自定义比例剪裁，支持UI自定义、支持跨进程回调](https://www.wanandroid.com/blog/show/2686)
+- [【Android 架构之MVVM】MVVM架构的基本搭建](https://blog.csdn.net/qq_41423726/article/details/103734217)
 -  参考 [Android博客周刊](http://androidblog.cn/index.php/Index/detail/id/89)
 
