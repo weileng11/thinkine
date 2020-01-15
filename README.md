@@ -187,6 +187,8 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 10.[Android 开发者的福利，介绍几款看源码的工具](https://zhuanlan.zhihu.com/p/100117330)
 - 11.[学不动也要学！探究Fragmen延迟加载的前世今生](https://juejin.im/post/5e085dafe51d45580769a1eb)
 - 12.[自定义控件通用库 WidgetCase](https://www.wanandroid.com/blog/show/2683)
+- 13.[Orient-Ui | 单RecyclerView实现花式表格](https://juejin.im/post/5e1bca86e51d45529f72f6c3)
+- 14.[Android自定义控件进阶篇，自定义LayoutManager](https://mp.weixin.qq.com/s/j0RBxRGleIm_PRkMYFtXbw)
 
 ### 11.值得学习的文章
 - 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
@@ -198,5 +200,6 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - [Android 程序员不得不收藏的 90+ 个人博客(持续更新...](https://juejin.im/post/5e0389ec5188251281602a2e)
 - [小红书图片剪裁框架+微信图片选择器+超高清大图预览+自定义比例剪裁，支持UI自定义、支持跨进程回调](https://www.wanandroid.com/blog/show/2686)
 - [【Android 架构之MVVM】MVVM架构的基本搭建](https://blog.csdn.net/qq_41423726/article/details/103734217)
+- [为什么Dialog弹出以后，activity就无法捕捉触摸事件了？](https://www.jianshu.com/p/9857c45737de)
 -  参考 [Android博客周刊](http://androidblog.cn/index.php/Index/detail/id/89)
 
