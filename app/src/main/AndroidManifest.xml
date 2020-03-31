@@ -30,6 +30,11 @@
 			android:name="wl.ui.ActLogin"
 			android:screenOrientation="portrait"
 			/>
+
+		<activity
+			android:name="wl.ui.ActMain"
+			android:screenOrientation="portrait"
+			/>
 		
 		<provider
 			android:name="wl.app.FileProvider"

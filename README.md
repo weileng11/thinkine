@@ -145,6 +145,7 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - RxPermissions，API23以上Android 6.0项目分为普通权限和危险权限，该库在项目运行时动态进行权限请求，支持RxJava2。
 
 ### 9.个人常用库
+- 强大而灵活的RecyclerView Adapter[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 
 - EasyPopup 对 PopupWindow 的封装，使得在项目中使用起来更加简单、方便、快捷 [EasyPopup](https://github.com/zyyoona7/EasyPopup)
 
@@ -172,6 +173,9 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 
 - SwipeBackHelper 使用物理返回键的情况下舍去了返回的Button [SwipeBackHelper](https://blog.csdn.net/ddwhan0123/article/details/48261597)
 
+- 工具包  AndroidUtilCode fire 是一个强大易用的安卓工具类库[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode/blob/master/README-CN.md)
+
+- ByRecyclerView：真·万能分割线 (线性/宫格/瀑布流)[万能分割线](https://github.com/youlookwhat/ByRecyclerView)
 ### 10.网络好文章兼各种库
 
 - 1.滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
@@ -189,6 +193,7 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 12.[自定义控件通用库 WidgetCase](https://www.wanandroid.com/blog/show/2683)
 - 13.[Orient-Ui | 单RecyclerView实现花式表格](https://juejin.im/post/5e1bca86e51d45529f72f6c3)
 - 14.[Android自定义控件进阶篇，自定义LayoutManager](https://mp.weixin.qq.com/s/j0RBxRGleIm_PRkMYFtXbw)
+- 15.[一行代码即可接入，二级联动订餐列表](https://github.com/KunMinX/Linkage-RecyclerView)
 
 ### 11.值得学习的文章
 - 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
