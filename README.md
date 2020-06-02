@@ -194,6 +194,7 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 13.[Orient-Ui | 单RecyclerView实现花式表格](https://juejin.im/post/5e1bca86e51d45529f72f6c3)
 - 14.[Android自定义控件进阶篇，自定义LayoutManager](https://mp.weixin.qq.com/s/j0RBxRGleIm_PRkMYFtXbw)
 - 15.[一行代码即可接入，二级联动订餐列表](https://github.com/KunMinX/Linkage-RecyclerView)
+- 16.[2020年GitHub 上那些优秀Android开源库，这里是Top10！](https://www.jianshu.com/p/3f5865109b05)
 
 ### 11.值得学习的文章
 - 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
