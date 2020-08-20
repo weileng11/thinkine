@@ -176,6 +176,8 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 工具包  AndroidUtilCode fire 是一个强大易用的安卓工具类库[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode/blob/master/README-CN.md)
 
 - ByRecyclerView：真·万能分割线 (线性/宫格/瀑布流)[万能分割线](https://github.com/youlookwhat/ByRecyclerView)
+
+- Timber 打印log日志  (https://github.com/JakeWharton/timber)
 ### 10.网络好文章兼各种库
 
 - 1.滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
@@ -195,6 +197,7 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - 14.[Android自定义控件进阶篇，自定义LayoutManager](https://mp.weixin.qq.com/s/j0RBxRGleIm_PRkMYFtXbw)
 - 15.[一行代码即可接入，二级联动订餐列表](https://github.com/KunMinX/Linkage-RecyclerView)
 - 16.[2020年GitHub 上那些优秀Android开源库，这里是Top10！](https://www.jianshu.com/p/3f5865109b05)
+- 17.[Android持续滑动布局ConsecutiveScrollerLayout的使用](https://www.jianshu.com/p/0783b0a37fa1)
 
 ### 11.值得学习的文章
 - 学不动也要学！深入了解ViewPager2 [说明文章](https://juejin.im/post/5df4aabe6fb9a0161104c8eb#comment)
