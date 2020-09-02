@@ -178,6 +178,8 @@ implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
 - ByRecyclerView：真·万能分割线 (线性/宫格/瀑布流)[万能分割线](https://github.com/youlookwhat/ByRecyclerView)
 
 - Timber 打印log日志  (https://github.com/JakeWharton/timber)
+
+- XLog  打印日志到文本  [XLog](https://github.com/elvishew/XLog/blob/master/README_ZH.md)
 ### 10.网络好文章兼各种库
 
 - 1.滴滴开源项目DoraemonKit在 GitHub上的star数突破10000，成为滴滴首个star数破万的开源项目 [DoraemonKit](https://github.com/didi/DoraemonKit)
