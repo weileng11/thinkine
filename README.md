@@ -1,51 +1,63 @@
-implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
+    //android Material Design风格自定义控件
+    implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
     implementation "net.qiujuer.genius:res:$rootProject.ext.geniusVersion"
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
-    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
-    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    //retrofit框架
+    implementation "com.squareup.retrofit2:retrofit:2.4.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.4.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
+    implementation "com.google.code.gson:gson:2.8.0"
+    //注解
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
     // Glide 包
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+    //eventbus
     implementation "org.greenrobot:eventbus:$rootProject.ext.eventbusVersion"
+    //弹窗框架
     implementation "com.github.zyyoona7:EasyPopup:$rootProject.ext.easyPopupVersion"
+    //rv侧滑框架，头部底部
     implementation "com.yanzhenjie:recyclerview-swipe:$rootProject.ext.recyclerviewSwipeVersion"
+    //图片选择框架
     implementation "com.lijunguan:imageseletor:$rootProject.ext.imageseletorVersion"
     implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
-
+    //圆形圆角
     implementation "com.makeramen:roundedimageview:$rootProject.ext.roundedimageviewVersion"
-
+    //图片选择框架（包含很多）
     implementation "com.github.LuckSiege.PictureSelector:picture_library:$rootProject.ext.pictureLibraryVersion"
+    //七牛
     api "com.qiniu:qiniu-android-sdk:$rootProject.ext.qiniuAndroidSdkVersion"
-
+    //手势解锁、手势密码、九宫格密码、九宫格图形
     implementation "com.github.ihsg:PatternLocker:$rootProject.ext.PatternLockerVersion"
-
+     //按钮
     implementation "com.kyleduo.switchbutton:library:$rootProject.ext.switchbuttonVersion"
 
     implementation "com.uber.autodispose:autodispose:$rootProject.ext.autodisposeVersion"
     implementation "com.uber.autodispose:autodispose-android:$rootProject.ext.autodisposeVersion"
     implementation "com.uber.autodispose:autodispose-android-archcomponents:$rootProject.ext.autodisposeVersion"
 
+    //二维码扫描
     implementation "cn.yipianfengye.android:zxing-library:$rootProject.ext.zxinglibraryVersion"
+    //权限
     implementation "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
 
     implementation "com.shizhefei:ViewPagerIndicator:$rootProject.ext.viewPagerIndicatorVersion"
+    //刷新框架
     implementation "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.ext.SmartRefreshLayoutVersion"
 
+    //热更新
     implementation "com.tencent.bugly:crashreport_upgrade:$rootProject.ext.Bugly_crashreport_upgrade_Version"
     implementation "com.tencent.bugly:nativecrashreport:$rootProject.ext.Bugly_nativecrashreport_Version"
-
+    //阿里推送
     implementation 'com.aliyun.ams:alicloud-android-push:3.1.3@aar'
     implementation 'com.aliyun.ams:alicloud-android-utils:1.1.3'
     implementation 'com.aliyun.ams:alicloud-android-beacon:1.0.1'
-
+    //toast
     implementation "com.hjq:toast:$rootProject.ext.ToastVersion"
-
+    //mmkv 保存
     implementation "com.tencent:mmkv:$rootProject.ext.mmkvVersion"
-
+    //log
     implementation "com.orhanobut:logger:$rootProject.ext.loggerVersion"
 
     implementation project(':picker')
