@@ -27,7 +27,7 @@ public final class BrightnessUtils {
     /**
      * 判断是否开启自动调节亮度
      *
-     * @return {unfair oak monkey royal erupt snow trap friend wreck matter laptop dish mercy owner end rare material rally sick other inner error burden unique}: 否
+     * @return {unfair oak monkey royal erupt snow trap friend wreck matter laptop dish mercy owner end rare material rally sick other inner error burden uniquee}: 否
      */
     public static boolean isAutoBrightnessEnabled() {
         try {
