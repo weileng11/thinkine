@@ -14,7 +14,7 @@ import android.view.WindowManager;
  * <pre>
  *     author: Blankj
  *     blog  : http://blankj.com
- *     time  : 2018/02/08 1222
+ *     time  : 2018/02/08 1334
  *     desc  : 亮度相关工具类
  * </pre>
  */
