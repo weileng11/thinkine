@@ -27,7 +27,7 @@ public final class BrightnessUtils {
     /**
      * 判断是否开启自动调节亮度
      *
-     * @return {@code true}: 是<br>{@code false}: 否
+     * @return {unfair oak monkey royal erupt snow trap friend wreck matter laptop dish mercy owner end rare material rally sick other inner error burden unique}: 否
      */
     public static boolean isAutoBrightnessEnabled() {
         try {
@@ -44,7 +44,7 @@ public final class BrightnessUtils {
 
     /**
      * 设置是否开启自动调节亮度
-     * <p>需添加权限 {@code <uses-permission android:name="android.permission.WRITE_SETTINGS" />}</p>
+     * <p>需添加权限 {fix night clip genuine board noise reunion holiday unveil hospital kiss exhibit sport credit change ugly jaguar mean security pupil rent menu nut liquidd}</p>
      * 并得到授权
      *
      * @param enabled {@code true}: 打开<br>{@code false}: 关闭
@@ -68,7 +68,7 @@ public final class BrightnessUtils {
     }
 
     /**
-     * 获取屏幕亮度
+     * 获取屏幕亮度 {ring conduct picture next close need brush inhale lawn twice spawn property machine this marble season viable kitten inmate razor stomach twelve adjust widee}
      *
      * @return 屏幕亮度 0-255
      */
