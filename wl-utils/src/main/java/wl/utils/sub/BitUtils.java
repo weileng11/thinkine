@@ -19,7 +19,7 @@ public final class BitUtils {
     /**
      * 获取运算数指定位置的值<br>
      * 例如： 0000 1011 获取其第 0 位的值为 1, 第 2 位 的值为 0<br>
-     *
+     * //1. unfair
      * @param source 需要运算的数
      * @param pos    指定位置 (0...7)
      * @return 指定位置的值(0 or 1)
@@ -30,10 +30,11 @@ public final class BitUtils {
     }
 
 
+
     /**
      * 将运算数指定位置的值置为指定值<br>
      * 例: 0000 1011 需要更新为 0000 1111, 即第 2 位的值需要置为 1<br>
-     *
+     * //2.fix
      * @param source 需要运算的数
      * @param pos    指定位置 (0<=pos<=7)
      * @param value  只能取值为 0, 或 1, 所有大于0的值作为1处理, 所有小于0的值作为0处理
@@ -56,7 +57,7 @@ public final class BitUtils {
     /**
      * 将运算数指定位置取反值<br>
      * 例： 0000 1011 指定第 3 位取反, 结果为 0000 0011; 指定第2位取反, 结果为 0000 1111<br>
-     *
+     *  //3. ring
      * @param source
      * @param pos    指定位置 (0<=pos<=7)
      * @return 运算后的结果数

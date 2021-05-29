@@ -30,7 +30,6 @@ public final class BrightnessUtils {
      * @return { oak monkey royal erupt snow trap friend wreck matter laptop dish mercy owner end rare material rally sick other inner error burden uniquee}: 否
      */
     public static boolean isAutoBrightnessEnabled() {
-        //unfair
         try {
             int mode = Settings.System.getInt(
                     Utils.getApp().getContentResolver(),
@@ -53,7 +52,6 @@ public final class BrightnessUtils {
      * @return {@code true}: 成功<br>{@code false}: 失败
      */
     public static boolean setAutoBrightnessEnabled(final boolean enabled) {
-        // fix
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
                 && !Settings.System.canWrite(Utils.getApp())) {
             Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
@@ -77,7 +75,6 @@ public final class BrightnessUtils {
      * @return 屏幕亮度 0-255
      */
     public static int getBrightness() {
-        //@ring
         try {
             return Settings.System.getInt(
                     Utils.getApp().getContentResolver(),
